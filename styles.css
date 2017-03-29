@@ -1,0 +1,52 @@
+#main {
+    background-color: #72788D;
+    overflow: hidden;
+    top: 0;
+}
+
+#main h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #636B61; 
+    transition: 0.5s;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-overflow: clip;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 35px;
+    color: #FFF;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #72788D;
+}
+
+body {
+    background-color: #E3D7FF;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
