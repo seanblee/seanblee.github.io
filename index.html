@@ -1,35 +1,25 @@
-<html>
 <head>
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
-<div id="links" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Connect</a>
-  <a href="#">Portfolio</a>
-  <a href="#">About Me</a>
-  <a href="#">Resume</a>
+<div id="banner"></div>
+
+<div id="main" class="mainNav" data-0="background-color:rgba(255,255,255,0);" data-50="background-color:rgba(255,255,255,1);" data-500="background-color:rgba(255,255,255,1); height: 150px;" data-637="height: 0px;">
+<div>
+<a href='#' data-0="color:rgb(255,255,255);" data-50="color:rgb(0,0,0);">About Me</a>
+<a href='#' data-0="color:rgb(255,255,255);" data-50="color:rgb(0,0,0);">Portfolio</a>
+<a href='#' data-0="color:rgb(255,255,255);" data-50="color:rgb(0,0,0);">Resume</a>
 </div>
 
-<script>
-function openNav() {
-    document.getElementById("links").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
+</div>
 
-function closeNav() {
-    document.getElementById("links").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-    document.body.style.backgroundColor = "#E3D7FF";
-}
+
+
+<script type="text/javascript" src="skrollr.min.js"></script>
+<script type="text/javascript">
+	var s = skrollr.init();
 </script>
 
-<div id="main">
-<h1 onclick="openNav()">Sean Lee</h1>
-</div>
 </body>
-
-</html>
