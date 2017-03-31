@@ -17,7 +17,7 @@
     animation: dropDown 1.5s;
     position: relative;
     text-align: center;
-    padding-top:270px;
+    padding-top:260px;
     z-index: 1;
     width: 100%;
     font-family: 'Roboto', sans-serif;
@@ -82,5 +82,5 @@ body {
 
 @-webkit-keyframes dropDown {
     from {padding-top: 0px; opacity: 0;}
-    to {padding-top: 270px; opacity: 1;}
+    to {padding-top: 260px; opacity: 1;}
 }
