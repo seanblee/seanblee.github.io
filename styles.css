@@ -82,10 +82,12 @@
 .table h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
+    color: #666;
 }
 .table h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
+    color: #666;
 }
 
 
