@@ -28,10 +28,10 @@
             <div class="img">
             	<img id ="face" src="pics/face.png" data-100="opacity:0; padding-top: 500px" data-300="opacity:1; padding-top: 70px">
             </div>
-            
+
        		<div style="display: table-cell; vertical-align: middle; padding-left: 20px" data-100="opacity:0; padding-top: 500px" data-300="opacity:1; padding-top: 70px">
             	<h1>About Me</h1>
-            	<h2>I'm a second year student, currently studying Computer Engineering at Queen's University. When i'm not working on software development, I like playing basketball, cooking and hiking.</h2>
+            	<h2>Hello world hello world hello world</h2>
        		</div>
         </div>
     </div>
@@ -44,14 +44,14 @@
 <script type="text/javascript">
 window.smoothScroll = function(target) {
     var scrollContainer = target;
-    do { 
+    do {
         scrollContainer = scrollContainer.parentNode;
         if (!scrollContainer) return;
         scrollContainer.scrollTop += 1;
     } while (scrollContainer.scrollTop == 0);
 
     var targetY = 0;
-    do { 
+    do {
         targetY += target.offsetTop;
     } while (target = target.offsetParent);
 
