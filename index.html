@@ -10,6 +10,9 @@
 	<img id="banner" src="pics/back.jpg">
 	<h1 data-0="color:rgba(255,255,255,1);" data-300="color:rgba(255,255,255,0);">Sean Lee</h1>
 	<h2 data-0="color:rgba(255,255,255,1);" data-300="color:rgba(255,255,255,0);">Computer Engineer | Web Developer</h2>
+	<section id="scroll" class="scrollBtn">
+		<a href="#" onclick="smoothScroll(document.getElementById('about'))"><span></span></a>
+	</section>
 </div>
 
 
@@ -21,26 +24,32 @@
 </div>
 </div>
 
+
+
+<h1 id="flavorScroll" data-100="opacity:.8" data-300="opacity:0">Scroll Down!</h1>
+
 <hr style="width: 80%">
 <div class="table" id="about">
     <div>
         <div style="display: table-row">
             <div class="img">
-            	<img id ="face" src="pics/face.png" data-100="opacity:0; padding-top: 500px" data-300="opacity:1; padding-top: 70px">
+            	<img id ="face" src="pics/face.png" data-100="opacity:0; padding-top: 500px" data-300="opacity:1; padding-top: 100px">
             </div>
 
        		<div style="display: table-cell; vertical-align: middle; padding-left: 20px" data-100="opacity:0; padding-top: 500px" data-300="opacity:1; padding-top: 70px">
             	<h1>About Me</h1>
-            	<h2>Hello world hello world hello world</h2>
+            	<h2>Hey, </h2>
        		</div>
         </div>
     </div>
 </div>
 
+
 <script type="text/javascript" src="skrollr.min.js"></script>
 <script type="text/javascript">
 	var s = skrollr.init();
 </script>
+
 <script type="text/javascript">
 window.smoothScroll = function(target) {
     var scrollContainer = target;
