@@ -1,0 +1,25 @@
+body {
+  background: url("../backgrounds/01.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.navbar {
+  background: none;
+  border-color: transparent;
+}
+
+.header {
+  animation: fadeIn 1.5s;
+  position: relative;
+  text-align: center;
+  color: #FFF;
+}
+
+.header h1{
+  font-size: 175px;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
