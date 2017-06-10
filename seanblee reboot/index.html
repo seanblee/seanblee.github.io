@@ -3,10 +3,22 @@
 <html class = "full" lang = "en" >
   <head>
     <meta charset = "utf-8" name = "viewport" content = "width=device-width, initial-scale=1">
+    <!- Page properties->
+    <title>Sean Lee</title>
+    <link rel = "icon" href = "pics/favicon.png"/>
+
+    <!-BootStrap Dependencies->
     <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-Fontsheets->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-Stylesheets->
     <link rel = "stylesheet" href = "css/spread.css">
+
   </head>
 
   <body>
@@ -15,25 +27,56 @@
     <nav class = "navbar navbar-inverse">
       <div class = "container-fluid">
         <ul class = "nav navbar-nav">
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Resume</a></li>
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-menu-hamburger" style = "color: white" onclick = "openMenu()"></span></a></li>
         </ul>
-
+        <ul class = "nav navbar-nav navbar-right">
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-headphones" style = "color: white" onclick = "openMenu()"></span></a></li>
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-comment" style = "color: white" onclick = "openMenu()"></span></a></li>
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-question-sign" style = "color: white" onclick = "openMenu()"></span></a></li>
+        </ul>
       </div>
     </nav>
 
+    <!- Menu Scripts->
+    <script>
+    function openMenu(){
+      document.getElementById("sideMenu").style.width = "100%";
+      document.getElementById("sideMenu").style.height = "100%";
+    }
+    function closeMenu(){
+      document.getElementById("sideMenu").style.width= "0%";
+      document.getElementById("sideMenu").style.height = "0%";
+    }
+    </script>
+
+    <!- Menu ->
+    <div class = "menu-wrapper">
+      <div id = "sideMenu" class = "side-menu">
+        <nav class = "navbar navbar-default center">
+          <div class = "navbar-right"
+            <ul class = "nav navbar-nav">
+              <a href="#"><span class = "glyphicon glyphicon-remove" onclick = "closeMenu()"></span></a></
+            </ul>
+          </div>
+          <div class = "navbar-inner">
+            <ul class = "nav navbar-nav">
+              <li><a href = "#"><span class = "glyphicon glyphicon-user"> About</a></li>
+              <li><a href = "#"><span class = "glyphicon glyphicon-briefcase  "> Projects</a></li>
+              <li><a href = "#"><span class = "glyphicon glyphicon-file"> Resume</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  </div>
+
+    <!-Name and description->
     <div class = "header">
       <h1>Sean Lee</h1>
-      <h2><small>Computer Engineer</small></h2>
+      <h2>> Computer Engineer <</h2>
     </div>
 
-    <div>
-      <form class = "navbar-form navbar-left">
-        <div class = "input-group">
-          <input type = "text" class = "form-control" placeholder = "What are you looking for?">
-        </div>
-      </form>
+    <div class = "search">
+        <input type = "text" class = "form-control" autofocus>
     </div>
 
   </body>
