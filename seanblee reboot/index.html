@@ -62,7 +62,7 @@
           <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-menu-hamburger" onclick = "openMenu()"></span></a></li>
         </ul>
         <ul class = "nav navbar-nav navbar-right">
-          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-headphones" onclick = "openMenu()"></span></a></li>
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-retweet" onclick = "cycleWallpaper()"></span></a></li>
           <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-comment" onclick = "openShare()"></span></a></li>
           <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-question-sign" onclick = "openMenu()"></span></a></li>
         </ul>
@@ -70,6 +70,19 @@
 
     <!-Scripts->
     <script>
+    var curWallpaper = 0;
+    function cycleWallpaper(){
+      curWallpaper++;
+      var str1 = "url('pics/wallpapers/0";
+      var url = str1.concat(curWallpaper);
+      var str2 = "/jpg')";
+      var final = url.concat(str2);
+      alert(final);
+      document.body.style.backgroundImage = final;
+      document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center";
+    }
     function openMenu(){
       document.getElementById("sideMenu").style.width = "100%";
       document.getElementById("sideMenu").style.height = "100%";
@@ -110,11 +123,11 @@
 
     <!-Name Window->
     <div id = "draggable" class = "window name-window">
-    <div id = "titleBar" class = "row title-bar" onclick = "windowClicked(this.id)">
+    <div id = "titleBar draggable" class = "row title-bar" onclick = "windowClicked(this.id)">
       <div class = "col-sm-4"></div>
       <div class = "window-title col-sm-4">
-        <ul class = "nav navbar-nav vcenter">
-          about@workstation
+        <ul class = "nav navbar-nav vcenter noIbar">
+            about@workstation:~
         </ul>
       </div>
       <div class = "window-options col-sm-4">
@@ -124,7 +137,11 @@
       </div>
     </div>
     <div class = "header">
-      <h1 class = "termtext">sean lee</h1>
+      <h1 class = "termtext">Name: <span class="value">Sean lee</span>
+        <br/>OS: <span class="value">badlinux</span>
+        <br/>School: <span class="value">Queen's University</span>
+        <br/>Degree: <span class="value">Computer Engineering</span>
+        <br/>Website <span class="value">version: ?.?.?</span></h1>
     </div>
     </div>
 

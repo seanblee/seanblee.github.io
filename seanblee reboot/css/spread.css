@@ -122,14 +122,16 @@ body {
 }
 .header {
   text-align: left;
+  padding-top: 10px;
   padding-left: 10px;
-  color: #39FF14;
   font-family: 'Menlo', sans-serif;
 }
 .header h1 {
+  color: #37FDFC;
   font-size: 10px;
 }
-.header h2 {
+.value {
+  color: #FFF;
   font-size: 10px;
 }
 .termtext {
@@ -167,7 +169,9 @@ body {
   display: inline-block;
   vertical-align: middle;
 }
-
+.noIbar {
+cursor:default;
+}
 @-webkit-keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
