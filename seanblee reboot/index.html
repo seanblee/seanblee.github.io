@@ -15,6 +15,8 @@
 
     <!-Fontsheets->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-CDN->
+    <script src="https://use.fontawesome.com/70ec8b1c3b.js"></script>
 
     <!-Stylesheets->
     <link rel = "stylesheet" href = "css/spread.css">
@@ -23,15 +25,32 @@
 
   <body>
 
+    <!- Share Bar ->
+    <div class = "row share" id = "share">
+      <div class = "connectwrap col-sm-4">
+        <h1 class = "navbar-text">Connect</h1>
+      </div>
+      <div class = "sharewrap col-sm-4">
+        <ul class = "nav navbar-nav">
+          <li class = "glyph-wrap"><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li class = "glyph-wrap"><a href="#"><i class="fa fa-github"></i></a></li>
+          <li class = "glyph-wrap"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class = "closewrap col-sm-4">
+        <li class = "glyph-wrap"><a href="#"><span class = "glyphicon glyphicon-remove" onclick = "closeMenu()"></span></a></li>
+      </div>
+    </div>
+
     <!- Navigation Bar ->
-    <nav class = "navbar navbar-inverse">
+    <nav class = "navbar navbar-default main">
       <div class = "container-fluid">
         <ul class = "nav navbar-nav">
           <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-menu-hamburger" style = "color: white" onclick = "openMenu()"></span></a></li>
         </ul>
         <ul class = "nav navbar-nav navbar-right">
           <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-headphones" style = "color: white" onclick = "openMenu()"></span></a></li>
-          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-comment" style = "color: white" onclick = "openMenu()"></span></a></li>
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-comment" style = "color: white" onclick = "openShare()"></span></a></li>
           <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-question-sign" style = "color: white" onclick = "openMenu()"></span></a></li>
         </ul>
       </div>
@@ -42,6 +61,9 @@
     function openMenu(){
       document.getElementById("sideMenu").style.width = "100%";
       document.getElementById("sideMenu").style.height = "100%";
+    }
+    function openShare(){
+      document.getElementById("share").style.height = "100px";
     }
     function closeMenu(){
       document.getElementById("sideMenu").style.width= "0%";
@@ -55,7 +77,7 @@
         <nav class = "navbar navbar-default center">
           <div class = "navbar-right"
             <ul class = "nav navbar-nav">
-              <a href="#"><span class = "glyphicon glyphicon-remove" onclick = "closeMenu()"></span></a></
+              <a href="#"><span class = "glyphicon glyphicon-remove" onclick = "closeMenu()"></span></a>
             </ul>
           </div>
           <div class = "navbar-inner">

@@ -23,23 +23,40 @@ body {
   transition: 1s;
 }
 
-.navbar.center .navbar-inner {
+.share{
+  height: 0px;
+  overflow: hidden;
+  transition: 1s;
+  background-color: #323246;
+  opacity: 0.5;
+}
+.sharewrap{
   text-align: center;
 }
-.navbar.center .navbar-right{
-  text-align: right;
-}
-.navbar.center .navbar-inner .nav{
-  margin-top: 200px;
+.sharewrap .nav{
   float: none;
   display: inline-block;
 }
+.connectwrap{
+  text-align: left;
+}
+.connectwrap h1{
+  float: none;
+  display: inline-block;
+}
+.closewrap{
+  text-align: right;
+}
+.closewrap a{
+  float: none;
+  display:inline-block;
+}
 
-.navbar {
+.main {
   background: none;
   border-color: transparent;
 }
-.navbar li{
+.main li{
   z-index: 1;
 }
 
