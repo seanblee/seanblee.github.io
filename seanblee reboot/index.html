@@ -27,34 +27,36 @@
 
     <!- Share Bar ->
     <div class = "row share" id = "share">
-      <div class = "connectwrap col-sm-4">
-        <h1 class = "navbar-text">Connect</h1>
+      <div class = "connect-wrap col-sm-4">
+        <ul class = "nav navbar-nav vcenter">
+          <h1>Connect</h1>
+        </ul>
       </div>
-      <div class = "sharewrap col-sm-4">
-        <ul class = "nav navbar-nav">
-          <li class = "glyph-wrap"><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li class = "glyph-wrap"><a href="#"><i class="fa fa-github"></i></a></li>
+      <div class = "share-wrap col-sm-4">
+        <ul class = "nav navbar-nav vcenter">
+          <li class = "glyph-wrap"><a href="https://www.facebook.com/sean.lee.167"><i class="fa fa-facebook"></i></a></li>
+          <li class = "glyph-wrap"><a href="http://github.com/seanblee"><i class="fa fa-github"></i></a></li>
           <li class = "glyph-wrap"><a href="#"><i class="fa fa-linkedin"></i></a></li>
         </ul>
       </div>
-      <div class = "closewrap col-sm-4">
-        <li class = "glyph-wrap"><a href="#"><span class = "glyphicon glyphicon-remove" onclick = "closeMenu()"></span></a></li>
+      <div class = "close-wrap col-sm-4">
+        <ul class = "nav navbar-nav vcenter">
+          <li class = "glyph-wrap"><a href="#"><span class = "glyphicon glyphicon-remove" onclick = "closeShare()"></span></a></li>
+        </ul>
       </div>
     </div>
 
     <!- Navigation Bar ->
-    <nav class = "navbar navbar-default main">
       <div class = "container-fluid">
         <ul class = "nav navbar-nav">
-          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-menu-hamburger" style = "color: white" onclick = "openMenu()"></span></a></li>
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-menu-hamburger" onclick = "openMenu()"></span></a></li>
         </ul>
         <ul class = "nav navbar-nav navbar-right">
-          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-headphones" style = "color: white" onclick = "openMenu()"></span></a></li>
-          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-comment" style = "color: white" onclick = "openShare()"></span></a></li>
-          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-question-sign" style = "color: white" onclick = "openMenu()"></span></a></li>
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-headphones" onclick = "openMenu()"></span></a></li>
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-comment" onclick = "openShare()"></span></a></li>
+          <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-question-sign" onclick = "openMenu()"></span></a></li>
         </ul>
       </div>
-    </nav>
 
     <!- Menu Scripts->
     <script>
@@ -63,7 +65,10 @@
       document.getElementById("sideMenu").style.height = "100%";
     }
     function openShare(){
-      document.getElementById("share").style.height = "100px";
+      document.getElementById("share").style.height = "auto";
+    }
+    function closeShare(){
+      document.getElementById("share").style.height = "0px";
     }
     function closeMenu(){
       document.getElementById("sideMenu").style.width= "0%";

@@ -3,8 +3,13 @@
   src: url(../fonts/Menlo-Regular.ttf);
 }
 
+html{
+  height: 100%;
+}
 body {
+  overflow: hidden;
   background-color: #000019;
+  background: linear-gradient(to bottom right, #003366, black) no-repeat;
 }
 
 .menu-wrapper{
@@ -27,29 +32,37 @@ body {
   height: 0px;
   overflow: hidden;
   transition: 1s;
-  background-color: #323246;
-  opacity: 0.5;
+  background-color: #000019;
 }
-.sharewrap{
+
+.share-wrap{
   text-align: center;
 }
-.sharewrap .nav{
-  float: none;
-  display: inline-block;
+.share-wrap i{
+  color: #FFF;
 }
-.connectwrap{
+.share-wrap a:hover > i{
+  color: #19192F;
+}
+.connect-wrap{
   text-align: left;
 }
-.connectwrap h1{
-  float: none;
-  display: inline-block;
+.connect-wrap h1{
+  font-family: 'Roboto', sans-serif;
+  color:#FFF;
+  padding-left: 30px;
 }
-.closewrap{
+.close-wrap{
   text-align: right;
 }
-.closewrap a{
+.close-wrap a:hover > span{
+  color: #19192F !important;
+}
+
+.vcenter {
   float: none;
-  display:inline-block;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .main {
@@ -63,8 +76,21 @@ body {
 .glyph-wrap{
   font-size: 35px;
   color: #FFF;
-  margin-top: 12px;
-  padding-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: none;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+}
+.glyph-wrap > a > span{
+  color: #FFF;
+}
+.glyph-wrap > a:hover > span{
+  color: #000019;
+}
+.glyph-wrap > a:focus > span{
+  color: #000019;
 }
 
 .header {
