@@ -15,8 +15,18 @@
 
     <!-Fontsheets->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <!-CDN->
     <script src="https://use.fontawesome.com/70ec8b1c3b.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#draggable" ).draggable({handle: ".title-bar", stack: "div", containment: "parent"});
+        $( "#draggable2" ).draggable({handle: ".title-bar", stack: "div", containment: "parent"});
+      } );
+    </script>
 
     <!-Stylesheets->
     <link rel = "stylesheet" href = "css/spread.css">
@@ -29,7 +39,7 @@
     <div class = "row share" id = "share">
       <div class = "connect-wrap col-sm-4">
         <ul class = "nav navbar-nav vcenter">
-          <h1>Connect</h1>
+          <li><a href="#"><h1>Connect</h1></a></li>
         </ul>
       </div>
       <div class = "share-wrap col-sm-4">
@@ -58,17 +68,19 @@
         </ul>
       </div>
 
-    <!- Menu Scripts->
+    <!-Scripts->
     <script>
     function openMenu(){
       document.getElementById("sideMenu").style.width = "100%";
       document.getElementById("sideMenu").style.height = "100%";
     }
     function openShare(){
-      document.getElementById("share").style.height = "auto";
+      document.getElementById("share").style.backgroundColor = "rgba(255,255,255,0)";
+      document.getElementById("share").style.height = "95px";
     }
     function closeShare(){
       document.getElementById("share").style.height = "0px";
+      document.getElementById("share").style.backgroundColor = "rgba(255,255,255,1)";
     }
     function closeMenu(){
       document.getElementById("sideMenu").style.width= "0%";
@@ -96,14 +108,32 @@
       </div>
   </div>
 
-    <!-Name and description->
+    <!-Name Window->
+    <div id = "draggable" class = "window name-window">
+    <div id = "titleBar" class = "row title-bar" onclick = "windowClicked(this.id)">
+      <div class = "col-sm-4"></div>
+      <div class = "window-title col-sm-4">
+        <ul class = "nav navbar-nav vcenter">
+          about@workstation
+        </ul>
+      </div>
+      <div class = "window-options col-sm-4">
+        <ul class = "nav navbar-nav vcenter">
+          <li class = "option-wrap"><span class = "glyphicon glyphicon-remove" onclick = "closeShare()"></span></li>
+        </ul>
+      </div>
+    </div>
     <div class = "header">
-      <h1>Sean Lee</h1>
-      <h2>> Computer Engineer <</h2>
+      <h1 class = "termtext">sean lee</h1>
+    </div>
     </div>
 
+    <!-Terminal->
+    <div id = "draggable2" class = "window terminal-window">
+    <div id = "titleBar2" class = "row title-bar" onclick = "windowClicked(this.id)"></div>
     <div class = "search">
         <input type = "text" class = "form-control" autofocus>
+    </div>
     </div>
 
   </body>

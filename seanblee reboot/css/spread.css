@@ -3,23 +3,25 @@
   src: url(../fonts/Menlo-Regular.ttf);
 }
 
-html{
+html {
+  animation: fadeIn 2s;
   height: 100%;
 }
 body {
   overflow: hidden;
+  height: 100%;
   background-color: #000019;
   background: linear-gradient(to bottom right, #003366, black) no-repeat;
 }
 
-.menu-wrapper{
+.menu-wrapper {
   position: fixed;
   top: 30px;
   left: 30px;
   bottom: 30px;
   right: 30px;
 }
-.side-menu{
+.side-menu {
   width: 0px;
   height: 0px;
   overflow: hidden;
@@ -28,52 +30,45 @@ body {
   transition: 1s;
 }
 
-.share{
+.share {
   height: 0px;
   overflow: hidden;
-  transition: 1s;
-  background-color: #000019;
+  transition: 0.5s;
+  background-color: #FFF;
 }
-
-.share-wrap{
+.share-wrap {
   text-align: center;
 }
-.share-wrap i{
+.share-wrap i {
   color: #FFF;
 }
-.share-wrap a:hover > i{
+.share-wrap a:hover > i {
   color: #19192F;
 }
-.connect-wrap{
+.connect-wrap {
   text-align: left;
 }
-.connect-wrap h1{
+.connect-wrap h1 {
   font-family: 'Roboto', sans-serif;
   color:#FFF;
   padding-left: 30px;
 }
-.close-wrap{
+.close-wrap {
   text-align: right;
 }
-.close-wrap a:hover > span{
+.close-wrap a:hover > span {
   color: #19192F !important;
-}
-
-.vcenter {
-  float: none;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .main {
   background: none;
   border-color: transparent;
 }
-.main li{
+.main li {
   z-index: 1;
 }
 
-.glyph-wrap{
+.glyph-wrap {
   font-size: 35px;
   color: #FFF;
   margin-top: 15px;
@@ -83,51 +78,94 @@ body {
   cursor: pointer;
   z-index: 1;
 }
-.glyph-wrap > a > span{
+.glyph-wrap > a > span {
   color: #FFF;
 }
-.glyph-wrap > a:hover > span{
+.glyph-wrap > a:hover > span {
   color: #000019;
 }
-.glyph-wrap > a:focus > span{
+.glyph-wrap > a:focus > span {
   color: #000019;
 }
 
-.header {
-  animation: fadeIn 2s;
-  position: relative;
-  text-align: center;
-  color: #FFF;
+.window {
+  resize: both;
+  background-color: #D3D3D3;
+  height: 320px;
+  width: 500px;
+  border: 3px ridge;
+  border-color: #404040;
+  overflow: hidden;
+}
+.title-bar{
+  background-color: #303030;
+  height: 25px;
+  width: 100%;
+  margin-left: 0;
+  border-bottom: 3px ridge;
+  border-color: #404040;
+}
+.window-title {
+  color: #fff;
   font-family: 'Menlo', sans-serif;
 }
-.header h1{
-  font-size: 100px;
-}
-.header h2{
-  font-size: 20px;
-  margin-top: -20px;
+.window-options {
+  text-align: right;
+  padding-right: 0px;
+  color: #FFF;
+  font-size: 10px;
 }
 
-.search{
+.name-window {
+  left: 20%;
+  background-color: #000;
+}
+.header {
+  text-align: left;
+  padding-left: 10px;
+  color: #39FF14;
+  font-family: 'Menlo', sans-serif;
+}
+.header h1 {
+  font-size: 10px;
+}
+.header h2 {
+  font-size: 10px;
+}
+.termtext {
+  margin:0;
+  padding:0;
+}
+
+.terminal-window {
+  left: 40%;
+  background-color: #000;
+}
+.search {
   animation: fadeIn 2s;
   display: block;
   position: relative;
   text-align: center;
 }
-
-.form-control{
+.form-control {
   background-color: transparent !important;
   border: none !important;
   box-shadow: none;
-  text-align: center;
+  text-align: left;
+  left-padding: 5px;
   font-size: 20px;
   color: #FFF;
-  height: 100px;
   font-family: 'Menlo', sans-serif;
 }
 
-.form-control:focus{
+.form-control:focus {
   box-shadow: none;
+}
+
+.vcenter {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @-webkit-keyframes fadeIn {
