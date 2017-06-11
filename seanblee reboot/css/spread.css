@@ -6,11 +6,12 @@
 html {
   animation: fadeIn 2s;
   height: 100%;
+  overflow: hidden;
 }
 body {
   overflow: hidden;
   height: 100%;
-  background-color: #000019;
+  background-color: #003366;
   background: linear-gradient(to bottom right, #003366, black) no-repeat;
 }
 
@@ -20,6 +21,7 @@ body {
   left: 30px;
   bottom: 30px;
   right: 30px;
+  z-index: -1 !important;
 }
 .side-menu {
   width: 0px;
@@ -60,14 +62,6 @@ body {
   color: #19192F !important;
 }
 
-.main {
-  background: none;
-  border-color: transparent;
-}
-.main li {
-  z-index: 1;
-}
-
 .glyph-wrap {
   font-size: 35px;
   color: #FFF;
@@ -88,7 +82,29 @@ body {
   color: #000019;
 }
 
+.main {
+  position: absolute;
+  background: transparent;
+  z-index: 2;
+}
+
+.operating-wrapper {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  background: url('../pics/screen-frame.png');
+  background-size: 100% 100%;
+}
+.limit-wrapper {
+  position: absolute;
+  height: 76%;
+  width: 82%;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .window {
+  position: absolute;
   resize: both;
   background-color: #D3D3D3;
   height: 320px;
@@ -108,6 +124,7 @@ body {
 .window-title {
   color: #fff;
   font-family: 'Menlo', sans-serif;
+  text-align: center;
 }
 .window-options {
   text-align: right;
@@ -117,18 +134,17 @@ body {
 }
 
 .name-window {
+  top: 20%;
   left: 20%;
   background-color: #000;
+  z-index: 1;
 }
+
 .header {
   text-align: left;
   padding-top: 10px;
   padding-left: 10px;
   font-family: 'Menlo', sans-serif;
-}
-.header h1 {
-  color: #37FDFC;
-  font-size: 10px;
 }
 .value {
   color: #FFF;
@@ -137,11 +153,15 @@ body {
 .termtext {
   margin:0;
   padding:0;
+  color: #37FDFC;
+  font-size: 10px;
 }
 
 .terminal-window {
+  top: 40%;
   left: 40%;
   background-color: #000;
+  z-index: 0;
 }
 .search {
   animation: fadeIn 2s;
@@ -159,9 +179,25 @@ body {
   color: #FFF;
   font-family: 'Menlo', sans-serif;
 }
-
 .form-control:focus {
   box-shadow: none;
+}
+
+.drawing-window {
+  top: 20%;
+  left: 60%;
+  height: 370px;
+  width: 400px;
+  background-color: #000;
+}
+.drawing-window h1 {
+  margin: 0;
+}
+.drawing-window h1 > pre {
+  background-color: black;
+  border: none;
+  color: #37FDFC;
+  padding-left: 60px;
 }
 
 .vcenter {
