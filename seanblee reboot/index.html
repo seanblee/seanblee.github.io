@@ -97,7 +97,7 @@
     <div class = "col-sm-4"></div>
     <div class = "window-title col-sm-4">
       <ul class = "nav navbar-nav vcenter noIbar">
-          about:~
+          About Me:~
       </ul>
     </div>
     <div class = "window-options col-sm-4">
@@ -108,17 +108,34 @@
   </div>
   <div class = "header">
     <h1 class = "termtext">
-         Name: <span class="value">Sean lee</span>
-    <br/>OS: <span class="value">badlinux</span>
+      [user@localhost ~]$ <span class = "value">screenfetch -n</span>
+      <br/>
+    <br/>Name: <span class="value">Sean lee</span>
+    <br/>OS: <span class="value">grossLinux</span>
     <br/>School: <span class="value">Queen's University</span>
     <br/>Degree: <span class="value">Computer Engineering</span>
-    <br/>Website <span class="value">version: ?.?.?</span></h1>
+    <br/>Website: <span class="value">version: ?.?.?</span>
+    <br/>Description: <span class="value">I styled this website to resemble a linux distro workspace, check out the shell simulation I wrote in javascript!</span>
+    <br/>Font: <span class="value">Menlo</span>
+    <br/>Libraries and Frameworks: <span class="value">jQuery, Swordfish90, bootstrap</span></h1>
   </div>
   </div>
 
     <!-Terminal->
   <div id = "draggable2" class = "window terminal-window">
-  <div id = "titleBar2 draggable2" class = "row title-bar"></div>
+  <div id = "titleBar2 draggable2" class = "row title-bar">
+    <div class = "col-sm-4"></div>
+    <div class = "window-title col-sm-4">
+      <ul class = "nav navbar-nav vcenter noIbar">
+          Terminal
+      </ul>
+    </div>
+    <div class = "window-options col-sm-4">
+      <ul class = "nav navbar-nav vcenter">
+        <li class = "option-wrap"><span class = "glyphicon glyphicon-remove"></span></li>
+      </ul>
+    </div>
+  </div>
   <div class = "search">
       <input type = "text" class = "form-control" autofocus>
   </div>
@@ -130,7 +147,7 @@
     <div class = "col-sm-4"></div>
     <div class = "window-title col-sm-4">
       <ul class = "nav navbar-nav vcenter noIbar">
-          sean@localhost:~
+          user@localhost:~
       </ul>
     </div>
     <div class = "window-options col-sm-4">
@@ -140,20 +157,20 @@
     </div>
   </div>
   <div class = "header">
-    <h1 class = "termtext">[sean@localhost ~]$ <span class = "value">screenfetch -L</span><h1>
+    <h1 class = "termtext">[user@localhost ~]$ <span class = "value">screenfetch -L</span><h1>
   </div>
   <h1><pre>    ./"-.                 .-"\.
-  ./**+++\.-~~"""""~~-..-/+++**\.
- /***++++/++++++++++++++ \++++***\
-|**+++++/++++-----........\+++++**|
-|#+++++|+---------.........|+++++#|
- \#++++|---------**........|++++#/
-  \#++++\--------****...../++++#/
-   \#+++#\-------******../#+++#/
-    |#+###/\-----*******/\###+|
-    \#++#/|@|\--- ****/@|\#++#/
-     \#+/ |@|  \-****/|@| \+#/
-      \/   \@|  |-..| |@\  \/
+  ./**+++\.-~~"""""~~-..-/+++*\.
+ /***++++/++++++++++++++ \++++**\
+|**+++++/++++-----........\+++++*|
+|#+++++|+---------.........|++++#|
+ \#++++|-----------........|+++#/
+  \#++++\------------...../+++#/
+   \#+++#\-------------../#++#/
+    |#+###/\------------/\##+|
+    \#++#/|@|\--------/@|\#+#/
+     \#+/ |@|  \-----/|@| \#/
+      \/   \@|  |-..| |@\ |/
  	    \@| |-../ \@|
 	     \| /-./   \|
             ___/-./
@@ -168,23 +185,17 @@
       var backgrounds = new Array();
       var curWallpaper = [0];
       backgrounds[0] = new Image();
-      backgrounds[0].src = 'pics/wallpapers/01.jpg';
+      backgrounds[0].src = 'pics/wallpapers/10.png';
       backgrounds[1] = new Image();
-      backgrounds[1].src = 'pics/wallpapers/02.jpg';
+      backgrounds[1].src = 'pics/wallpapers/11.png';
       backgrounds[2] = new Image();
-      backgrounds[2].src = 'pics/wallpapers/03.jpg';
+      backgrounds[2].src = 'pics/wallpapers/12.png';
       backgrounds[3] = new Image();
-      backgrounds[3].src = 'pics/wallpapers/04.jpg';
+      backgrounds[3].src = 'pics/wallpapers/13.png';
       backgrounds[4] = new Image();
-      backgrounds[4].src = 'pics/wallpapers/05.jpg';
+      backgrounds[4].src = 'pics/wallpapers/14.jpg';
       backgrounds[5] = new Image();
-      backgrounds[5].src = 'pics/wallpapers/06.jpg';
-      backgrounds[6] = new Image();
-      backgrounds[6].src = 'pics/wallpapers/07.jpg';
-      backgrounds[7] = new Image();
-      backgrounds[7].src = 'pics/wallpapers/08.jpg';
-      backgrounds[8] = new Image();
-      backgrounds[8].src = 'pics/wallpapers/09.jpg';
+      backgrounds[5].src = 'pics/wallpapers/15.jpg';
       function cycleWallpaper(){
         $('body').css('background-image', 'url(' + backgrounds[curWallpaper].src + ')');
         curWallpaper++;

@@ -92,13 +92,13 @@ body {
   height: 100%;
   position: relative;
   z-index: 1;
-  background: url('../pics/screen-frame.png');
+  background: url('../pics/screen-frame3.png');
   background-size: 100% 100%;
 }
 .limit-wrapper {
   position: absolute;
   height: 76%;
-  width: 82%;
+  width: 83%;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -148,13 +148,13 @@ body {
 }
 .value {
   color: #FFF;
-  font-size: 10px;
+  font-size: 14px;
 }
 .termtext {
   margin:0;
   padding:0;
   color: #37FDFC;
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .terminal-window {
@@ -186,8 +186,8 @@ body {
 .drawing-window {
   top: 20%;
   left: 60%;
-  height: 370px;
-  width: 400px;
+  height: 375px;
+  width: 395px;
   background-color: #000;
 }
 .drawing-window h1 {
