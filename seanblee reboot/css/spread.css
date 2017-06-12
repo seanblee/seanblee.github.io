@@ -133,13 +133,12 @@ body {
   font-size: 10px;
 }
 
-.name-window {
-  top: 20%;
-  left: 20%;
+.about-window {
+  top: 25%;
+  left: 35%;
   background-color: #000;
   z-index: 1;
 }
-
 .header {
   text-align: left;
   padding-top: 10px;
@@ -158,10 +157,11 @@ body {
 }
 
 .terminal-window {
-  top: 40%;
-  left: 40%;
+  bottom: 0;
+  left: 0;
   background-color: #000;
   z-index: 0;
+  height: 500px;
 }
 .search {
   animation: fadeIn 2s;
@@ -184,8 +184,8 @@ body {
 }
 
 .drawing-window {
-  top: 20%;
-  left: 60%;
+  bottom: 0;
+  right: 0;
   height: 375px;
   width: 395px;
   background-color: #000;
@@ -194,6 +194,21 @@ body {
   margin: 0;
 }
 .drawing-window h1 > pre {
+  background-color: black;
+  border: none;
+  color: #37FDFC;
+  padding-left: 60px;
+}
+
+.header-window {
+  top: 0;
+  right: 0;
+  height: 225px;
+  width: 460px;
+  background-color: #000;
+  z-index: 2;
+}
+.header-window h1 > pre {
   background-color: black;
   border: none;
   color: #37FDFC;

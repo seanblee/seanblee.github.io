@@ -27,6 +27,7 @@
         $( "#draggable" ).draggable({handle: ".title-bar", stack: "div", containment: ".limit-wrapper"});
         $( "#draggable2" ).draggable({handle: ".title-bar", stack: "div", containment: ".limit-wrapper"});
         $( "#draggable3" ).draggable({handle: ".title-bar", stack: "div", containment: ".limit-wrapper"});
+        $( "#draggable4" ).draggable({handle: ".title-bar", stack: "div", containment: ".limit-wrapper"});
       } );
     </script>
 
@@ -91,8 +92,8 @@
       </ul>
     </div>
 
-  <!-Name Window->
-  <div id = "draggable" class = "window name-window">
+  <!-About Window->
+  <div id = "draggable" class = "window about-window">
   <div id = "titleBar draggable" class = "row title-bar">
     <div class = "col-sm-4"></div>
     <div class = "window-title col-sm-4">
@@ -176,6 +177,32 @@
             ___/-./
            >_____/</pre></h1>
   </div>
+
+  <!-header->
+  <div id = "draggable4" class = "window header-window">
+  <div id = "titleBar4 draggable4" class = "row title-bar">
+    <div class = "col-sm-4"></div>
+    <div class = "window-title col-sm-4">
+      <ul class = "nav navbar-nav vcenter noIbar">
+          Name App
+      </ul>
+    </div>
+    <div class = "window-options col-sm-4">
+      <ul class = "nav navbar-nav vcenter">
+        <li class = "option-wrap"><span class = "glyphicon glyphicon-remove"></span></li>
+      </ul>
+    </div>
+  </div>
+  <h1><pre>8""""8                     8
+8      eeee eeeee eeeee    8     eeee eeee
+8eeeee 8    8   8 8   8    8e    8    8
+    88 8eee 8eee8 8e  8    88    8eee 8eee
+e   88 88   88  8 88  8    88    88   88
+8eee88 88ee 88  8 88  8    88eee 88ee 88ee
+
+           >Computer Engineer></pre></h1>
+  </div>
+
   </div>
   </div>
 
@@ -212,7 +239,7 @@
       }
       function openShare(){
         document.getElementById("share").style.backgroundColor = "rgba(255,255,255,0)";
-        document.getElementById("share").style.height = "95px";
+        document.getElementById("share").style.height = "200px";
       }
       function closeShare(){
         document.getElementById("share").style.height = "0px";
