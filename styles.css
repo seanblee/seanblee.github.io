@@ -67,6 +67,26 @@ html {
 .navbar-toggle:hover {  background-color: #FFF !important;}
 .navbar-toggle:focus {  background-color: #FFF !important;}
 .navbar-toggle:focus span{  background-color: #000080 !important;}
+.contact-bar {
+    height: auto;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 20vh;
+    bottom: 20vh;
+    right: 0;
+    background-color: rgba(0,0,0,1);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.contact-bar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
 .name {
   position: absolute;
   top: 0;

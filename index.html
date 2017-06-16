@@ -50,7 +50,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right nav-links">
-            <li><a href="#" data-0="color:rgba(32,32,32,1);" data-100="color:rgba(255,255,255,1);">contact</a></li>
+            <li><a href="#" onclick = "openContact()" data-0="color:rgba(32,32,32,1);" data-100="color:rgba(255,255,255,1);">contact</a></li>
             <li><a href="#" data-0="color:rgba(32,32,32,1);" data-100="color:rgba(255,255,255,1);">projects</a></li>
             <li><a href="#" data-0="color:rgba(32,32,32,1);" data-100="color:rgba(255,255,255,1);">resume</a></li>
           </ul>
@@ -58,13 +58,22 @@
       </div>
     </nav>
 
+  <!- Contact Links ->
+    <div id="contactBar" class="contact-bar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeContact()">&times;</a>
+      <a href="#"><i class="fa fa-github"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+    </div>
+
+
   <!- Name and Description ->
     <div class = "name">
       <div class = "name-wrap">
         <h1 class = "noIbar">Sean Lee</h1>
         <h2 class = "noIbar">A repository for my projects.</h2>
         <div class = "scroll-wrap">
-          <a href="#" onclick="smoothScroll(document.getElementById('aboutSite'))"><span class = "glyphicon glyphicon-chevron-down down-scroll"></span></a>
+          <a href="#" onclick="smoothScroll(document.getElementById('aboutSite'))"><span class = "glyphicon glyphicon-menu-down down-scroll"></span></a>
         </div>
       </div>
     </div>
@@ -179,5 +188,15 @@
       }
       scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
   }
+  </script>
+  <script>
+    function openContact() {
+      event.preventDefault();
+      document.getElementById("contactBar").style.width = "10vw";
+    }
+
+    function closeContact() {
+      document.getElementById("contactBar").style.width = "0";
+    }
   </script>
 </html>
