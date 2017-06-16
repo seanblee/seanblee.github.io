@@ -1,0 +1,76 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Sean Lee | Home</title>
+</head>
+
+<body>
+
+<div class="header">
+	<img id="banner" src="pics/back.jpg">
+	<h1 data-0="color:rgba(255,255,255,1);" data-300="color:rgba(255,255,255,0);">Sean Lee</h1>
+	<h2 data-0="color:rgba(255,255,255,1);" data-300="color:rgba(255,255,255,0);">Computer Engineer | Web Developer</h2>
+	<section id="scroll" class="scrollBtn">
+		<a href="#" onclick="smoothScroll(document.getElementById('about'))"><span></span></a>
+	</section>
+</div>
+
+
+<div id="main" class="mainNav" data-0="background-color:rgba(255,255,255,0);" data-50="background-color:rgba(255,255,255,1);" data-350="background-color:rgba(255,255,255,1); height: 150px;" data-500="height: 0px;">
+<div>
+	<a href='#' onclick="smoothScroll(document.getElementById('about'))" data-0="color:rgb(255,255,255);" data-50="color:rgb(0,0,0);">About Me</a>
+	<a href='#' data-0="color:rgb(255,255,255);" data-50="color:rgb(0,0,0);">Portfolio</a>
+	<a href='#' data-0="color:rgb(255,255,255);" data-50="color:rgb(0,0,0);">Resume</a>
+</div>
+</div>
+
+
+
+<h1 id="flavorScroll" data-100="opacity:.8" data-300="opacity:0">Scroll Down!</h1>
+
+<hr style="width: 80%">
+<div class="table" id="about">
+    <div>
+        <div style="display: table-row">
+            <div class="img">
+            	<img id ="face" src="pics/face.png" data-100="opacity:0; padding-top: 500px" data-300="opacity:1; padding-top: 100px">
+            </div>
+
+       		<div style="display: table-cell; vertical-align: middle; padding-left: 20px" data-100="opacity:0; padding-top: 500px" data-300="opacity:1; padding-top: 70px">
+            	<h1>About Me</h1>
+            	<h2>Hey, </h2>
+       		</div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="skrollr.min.js"></script>
+<script type="text/javascript">
+	var s = skrollr.init();
+</script>
+
+<script type="text/javascript">
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do {
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
+
+    var targetY = 0;
+    do {
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
+
+</body>
