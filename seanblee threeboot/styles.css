@@ -66,9 +66,17 @@ html {
   bottom: 0;
   width: 100%;
   height: 100%;
-  font-size: 30px;
   text-align: center;
   display: table;
+}
+.scroll-wrap {
+  font-size: 30px;
+  display: table-cell;
+  vertical-align: bottom;
+  color: #FFF;
+}
+.scroll-wrap a {
+  color: #FFF;
 }
 .name-wrap {
   padding-bottom: 20vh;
