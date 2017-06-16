@@ -8,9 +8,22 @@ html {
 .header-div {
   height: 100vh;
   width: 100%;
-  background: url('pics/wallpapers/01.jpg') center top no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+}
+.header-div video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
 }
 .main-bar {
   background-color: rgba(0,0,0,0);
@@ -20,7 +33,7 @@ html {
 }
 .navbar-brand {
   font-size: 40px;
-  padding-left: 5vh;
+  padding-left: 3vw;
   line-height: 13vh;
   height: 13vh;
   padding-top: 0;
@@ -33,18 +46,22 @@ html {
   border: none !important;
 }
 .nav-links {
-  padding-right: 5vh;
+  padding-right: 3vw;
 }
 .nav-links > li > a{
   font-size: 25px;
-  color: #FFF !important;
   line-height: 13vh;
   height: 13vh;
-  padding-right: 5vh;
+  padding-right: 1vw;
   padding-top: 0px;
 }
+.nav-links a:hover { color: #FFF !important;}
 .navbar-toggle {
   border: none;
+}
+.navbar-toggle {
+  line-height: 13vh;
+  height: 13vh;
 }
 .navbar-toggle > span {
   background-color: #FFF !important;
@@ -61,44 +78,53 @@ html {
   text-align: center;
   display: table;
 }
-.scroll {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  display: table;
-}
-.scroll-wrap {
-  font-size: 30px;
-  display: table-cell;
-  vertical-align: bottom;
-  color: #FFF;
-}
 .scroll-wrap a {
-  color: #FFF;
+  color: rgb(0,2,17);
 }
 .name-wrap {
-  padding-bottom: 20vh;
+  padding-bottom: 0vh;
   font-family: 'Futura', sans-serif;
-  color: #FFF;
+  color: rgb(0,2,17);
   display: table-cell;
   vertical-align: middle;
 }
 .name-wrap h1 {
-  font-size: 150px;
+  font-size: 200px;
+  line-height: 150px;
   margin-bottom: 0;
 }
 .name-wrap h2 {
   margin-top: 0;
 }
-.about-me {
+.about-site {
   height: 40vh;
+  background-color: rgb(0,2,17);
+  text-align: center;
+  display: table;
+  with: 100%;
 }
-.second-div {
+.about-site-wrap {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 12vw;
+  padding-right: 12vw;
+}
+.about-site-wrap h1 {
+  font-family: 'Futura', sans-serif;
+  font-size: 25px;
+  color: #FFF;
+}
+.project-div {
   height: 100vh;
   width: 100%;
-  background: url('pics/wallpapers/02.jpg') center top no-repeat;
+  background: white;
   background-size: cover;
   background-attachment: fixed;
+}
+
+
+
+.noIbar {
+cursor:default;
 }
