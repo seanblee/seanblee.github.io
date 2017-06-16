@@ -1,183 +1,76 @@
-<!DOCTYPE html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Sean Lee | Home</title>
+</head>
 
-<html class = "full" lang = "en" >
-  <head>
-    <meta charset = "utf-8" name = "viewport" content = "width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
 
-    <!- Page properties->
-    <title>Sean Lee</title>
-    <link rel = "icon" href = "pics/favicon.png"/>
+<div class="header">
+	<img id="banner" src="pics/back.jpg">
+	<h1 data-0="color:rgba(255,255,255,1);" data-300="color:rgba(255,255,255,0);">Sean Lee</h1>
+	<h2 data-0="color:rgba(255,255,255,1);" data-300="color:rgba(255,255,255,0);">Computer Engineer | Web Developer</h2>
+	<section id="scroll" class="scrollBtn">
+		<a href="#" onclick="smoothScroll(document.getElementById('about'))"><span></span></a>
+	</section>
+</div>
 
-    <!-BootStrap Dependencies->
-    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
-    <!-Fontsheets->
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<div id="main" class="mainNav" data-0="background-color:rgba(255,255,255,0);" data-50="background-color:rgba(255,255,255,1);" data-350="background-color:rgba(255,255,255,1); height: 150px;" data-500="height: 0px;">
+<div>
+	<a href='#' onclick="smoothScroll(document.getElementById('about'))" data-0="color:rgb(255,255,255);" data-50="color:rgb(0,0,0);">About Me</a>
+	<a href='#' data-0="color:rgb(255,255,255);" data-50="color:rgb(0,0,0);">Portfolio</a>
+	<a href='#' data-0="color:rgb(255,255,255);" data-50="color:rgb(0,0,0);">Resume</a>
+</div>
+</div>
 
-    <!-CDN->
-    <script src="https://use.fontawesome.com/70ec8b1c3b.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <!-Stylesheets->
-    <link rel = "stylesheet" href = "styles.css">
 
-  </head>
+<h1 id="flavorScroll" data-100="opacity:.8" data-300="opacity:0">Scroll Down!</h1>
 
-  <body>
+<hr style="width: 80%">
+<div class="table" id="about">
+    <div>
+        <div style="display: table-row">
+            <div class="img">
+            	<img id ="face" src="pics/face.png" data-100="opacity:0; padding-top: 500px" data-300="opacity:1; padding-top: 100px">
+            </div>
 
-    <!-Header Div ->
-      <div class = "header-div">
-        <video playsinline autoplay muted loop poster="pics/test.jpg" id="bgvid">
-          <source src="pics/test.mp4" type="video/mp4">
-        </video>
-      </div>
-
-    <!-Navigation Bar->
-      <nav class="navbar navbar-default navbar-fixed-top main-bar" id = "mainBar" data-0="background-color:rgba(0,2,17,0);" data-100="background-color:rgba(0,2,17,1);">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#" data-0="color:rgba(255,255,255,0);" data-100="color:rgba(255,255,255,1);">SL</a>
+       		<div style="display: table-cell; vertical-align: middle; padding-left: 20px" data-100="opacity:0; padding-top: 500px" data-300="opacity:1; padding-top: 70px">
+            	<h1>About Me</h1>
+            	<h2>Hey, </h2>
+       		</div>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav navbar-right nav-links">
-            <li><a href="#" data-0="color:rgba(32,32,32,1);" data-100="color:rgba(255,255,255,1);">contact</a></li>
-            <li><a href="#" data-0="color:rgba(32,32,32,1);" data-100="color:rgba(255,255,255,1);">projects</a></li>
-            <li><a href="#" data-0="color:rgba(32,32,32,1);" data-100="color:rgba(255,255,255,1);">resume</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-  <!- Name and Description ->
-    <div class = "name">
-      <div class = "name-wrap">
-        <h1 class = "noIbar">Sean Lee</h1>
-        <h2 class = "noIbar">A repository for my projects.</h2>
-        <div class = "scroll-wrap">
-          <a href="#" onclick="smoothScroll(document.getElementById('aboutSite'))"><span class = "glyphicon glyphicon-chevron-down down-scroll"></span></a>
-        </div>
-      </div>
     </div>
+</div>
 
-  <!- Quick Description ->
-    <div class = "about-site" id = "aboutSite">
-      <div class = "about-site-wrap">
-        <h1>This is a website I designed as a way to showcase some of my projects and experiment with web development and design, if you like any of the work you see here, I invite you to contact me.
-        </h1>
-      </div>
-    </div>
 
-  <!-Projects ->
-    <div class = "project-div">
-      <div class = "portfolio-wrapper">
-      <div class="row">
-          <div class="col-sm-4 portfolio-item">
-              <a href="#">
-                  <img class="img-responsive" src="pics/project/ease.png" alt="">
-              </a>
-              <h3>
-                  <a href="#">Ease</a>
-              </h3>
-              <p>Ease is an android application that provides students with a community based delivery service.</p>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-              <a href="#">
-                  <img class="img-responsive" src="pics/project/library.png" alt="">
-              </a>
-              <h3>
-                  <a href="#">Library Application</a>
-              </h3>
-              <p>A library-ready application written in java that plays with data structures, with a GUI written in JavaFX and XML</p>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-              <a href="#">
-                  <img class="img-responsive" src="pics/project/linux.png" alt="">
-              </a>
-              <h3>
-                  <a href="#">Linux Workspace Simulator</a>
-              </h3>
-              <p>An experimental iteration of my website, includes a javascript shell simulator. Click in to see it in action!</p>
-          </div>
-      </div>
-      <!-- /.row -->
+<script type="text/javascript" src="skrollr.min.js"></script>
+<script type="text/javascript">
+	var s = skrollr.init();
+</script>
 
-      <!-- Projects Row -->
-      <div class="row">
-          <div class="col-sm-4 portfolio-item">
-              <a href="#">
-                  <img class="img-responsive" src="pics/project/recipes.png" alt="">
-              </a>
-              <h3>
-                  <a href="#">Recipes</a>
-              </h3>
-              <p>Here are some of my favourite personal recipes for college cooking.</p>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-              <a href="#">
-                  <img class="img-responsive" src="pics/project/tinder.png" alt="">
-                  <!-"Designed by Frimufilms / Freepik"->
-              </a>
-              <h3>
-                  <a href="#">Tinder Bot</a>
-              </h3>
-              <p>A bot for tinder that I put together on a late lonely night, it didn't work!</p>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-              <a href="#">
-                  <img class="img-responsive" src="http://placehold.it/400x400" alt="">
-              </a>
-              <h3>
-                  <a href="#">Curve</a>
-              </h3>
-              <p>An experiment on Natural Language Processing and Machine Learning</p>
-          </div>
-      </div>
-    </div>
-    </div>
+<script type="text/javascript">
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do {
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
 
-  <!- About Me ->
-    <div class = "about-me">
-      <div class = "about-me-wrap">
-        <h1>About Me</h1>
-        <h4>I am a third year student at Queen's University, studying Computer Engineering. My interests in the field include : advanced database structures, network security, deep learning and software engineering. Outside of school I enjoy cooking, working out and trying out indie games.</h4>
-      </div>
-    </div>
-  </body>
+    var targetY = 0;
+    do {
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
 
-  <script type="text/javascript" src="libraries/skrollr.min.js"></script>
-  <script type="text/javascript">
-  	var s = skrollr.init();
-  </script>
-  <script type="text/javascript">
-    window.smoothScroll = function(target) {
-      var scrollContainer = target;
-      do {
-          scrollContainer = scrollContainer.parentNode;
-          if (!scrollContainer) return;
-          scrollContainer.scrollTop += 1;
-      } while (scrollContainer.scrollTop == 0);
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+</script>
 
-      var targetY = -document.getElementById('mainBar').clientHeight;;
-      do {
-          targetY += target.offsetTop;
-      } while (target = target.offsetParent);
-
-      scroll = function(c, a, b, i) {
-          i++; if (i > 30) return;
-          c.scrollTop = a + (b - a) / 30 * i;
-          setTimeout(function(){ scroll(c, a, b, i); }, 20);
-      }
-      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-  }
-  </script>
-</html>
+</body>
