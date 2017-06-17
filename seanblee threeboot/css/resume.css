@@ -2,6 +2,9 @@
    font-family: 'Futura';
    src: url('../fonts/futura.otf') format('opentype');
 }
+*{
+  -webkit-overflow-scrolling: touch;
+}
 html {
   height: 100%;
   animation: fadeIn 2s;
