@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html class = "full" lang = "en" >
+  <head>
+    <meta charset = "utf-8" name = "viewport" content = "width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!- Page properties->
+    <title>Sean Lee</title>
+    <link rel = "icon" href = "pics/favicon.png"/>
+
+    <!-BootStrap Dependencies->
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-Fontsheets->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-CDN->
+    <script src="https://use.fontawesome.com/70ec8b1c3b.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-Stylesheets->
+    <link rel = "stylesheet" href = "../css/resume.css">
+
+  </head>
+
+  <body>
+
+    <!-Navigation Bar->
+      <nav class="navbar navbar-default navbar-fixed-top main-bar" id = "mainBar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href = "../index.html" class="navbar-brand">SL</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right nav-links">
+            <li><a href="#" onclick = "openContact()">contact</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!- Contact Links ->
+    <div id="contactBar" class="contact-bar">
+      <div class="contact-wrap">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeContact()"><span class = "glyphicon glyphicon-menu-right"</a>
+        <a href="http://github.com/seanblee"><i class="fa fa-github"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/sean.lee.167"><i class="fa fa-facebook"></i></a>
+        <a href="#" onclick = "openEmail()"><span class = "glyphicon glyphicon-envelope"></span></a>
+      </div>
+    </div>
+
+  <!- Body ->
+    <div class = "resume-body">
+      <p>Last Updated: February 2017</p>
+      <div class = "resume-wrap">
+        <iframe class = "resume" src="https://drive.google.com/file/d/0B7nbAxGxw6RLSVEzdV8yTjBhbUU/preview" width="640" height="480"></iframe>
+      </div>
+    </div>
+
+    <!- Footer ->
+      <div class = "footer">
+        <div class = "footer-wrap">
+          <a href="http://github.com/seanblee"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/sean.lee.167"><i class="fa fa-facebook"></i></a>
+          <a href="#" onclick = "openEmail()"><span class = "glyphicon glyphicon-envelope"></span></a>
+          <p>©2017 Sean B Lee.
+        </div>
+      </div>
+  </body>
+
+  <script type="text/javascript" src="../libraries/skrollr.min.js"></script>
+  <script type="text/javascript">
+  	var s = skrollr.init();
+  </script>
+  <script type="text/javascript">
+    window.smoothScroll = function(target) {
+      var scrollContainer = target;
+      do {
+          scrollContainer = scrollContainer.parentNode;
+          if (!scrollContainer) return;
+          scrollContainer.scrollTop += 1;
+      } while (scrollContainer.scrollTop == 0);
+
+      var targetY = -document.getElementById('mainBar').clientHeight;;
+      do {
+          targetY += target.offsetTop;
+      } while (target = target.offsetParent);
+
+      scroll = function(c, a, b, i) {
+          i++; if (i > 30) return;
+          c.scrollTop = a + (b - a) / 30 * i;
+          setTimeout(function(){ scroll(c, a, b, i); }, 20);
+      }
+      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+  }
+  </script>
+  <script>
+    var a = 0;
+    function openContact() {
+      event.preventDefault();
+      if (a == 0){
+        document.getElementById("contactBar").style.width = "8vw";
+        a = 1;
+        } else {
+        document.getElementById("contactBar").style.width = "0vw";
+        a = 0;
+      }
+    }
+
+    function closeContact() {
+      document.getElementById("contactBar").style.width = "0";
+    }
+  </script>
+
+</html>

@@ -1,8 +1,9 @@
 @font-face {
    font-family: 'Futura';
-   src: url('fonts/futura.otf') format('opentype');
+   src: url('../fonts/futura.otf') format('opentype');
 }
 html {
+  height: 100%;
   animation: fadeIn 2s;
 }
 .header-div {
@@ -26,10 +27,11 @@ html {
     background-size: cover;
 }
 .main-bar {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,2,17,1);
   border: none;
   font-family: 'Futura', sans-serif;
   z-index: 1;
+  margin-bottom: 0;
 }
 .navbar-brand {
   font-size: 40px;
@@ -37,6 +39,7 @@ html {
   line-height: 13vh;
   height: 13vh;
   padding-top: 0;
+  color: #FFF !important;
 }
 .navbar-collapse {
   border-top: none;
@@ -54,6 +57,7 @@ html {
   height: 13vh;
   padding-right: 1vw;
   padding-top: 0px;
+  color: #FFF !important;
 }
 .nav-links a:hover { color: #d3d3d3 !important;}
 .navbar-toggle {
@@ -91,89 +95,24 @@ html {
     padding-top: 1.8vh;
 }
 .contact-bar a:hover {  color: #808080 !important;}
-.name {
-  position: absolute;
-  top: 0;
+.resume-body {
   width: 100%;
-  height: 100%;
+  height: auto;
+  padding-top: 13vh;
   text-align: center;
-  display: table;
 }
-.scroll-wrap a {
-  color: rgb(0,2,17);
+.resume-wrap {
+  padding-top: 5vh;
+  padding-bottom: 10vh;
 }
-.name-wrap {
-  padding-bottom: 0vh;
-  font-family: 'Futura', sans-serif;
-  color: rgb(0,2,17);
-  display: table-cell;
-  vertical-align: middle;
-}
-.name-wrap h1 {
-  font-size: 200px;
-  line-height: 150px;
-  margin-bottom: 0;
-}
-.name-wrap h2 {
-  margin-top: 0;
-}
-.about-site {
-  height: 35vh;
-  background-color: rgb(0,2,17);
-  text-align: center;
-  display: table;
-}
-.about-site-wrap {
-  float: none;
-  display: table-cell;
-  vertical-align: middle;
-  padding-left: 12vw;
-  padding-right: 12vw;
-}
-.about-site-wrap h1 {
+.resume-body p {
+  padding-top: 5vh;
   font-family: 'Futura', sans-serif;
   font-size: 25px;
-  color: #FFF;
-}
-.project-div {
-  height: auto;
-  background: white;
-  background-size: cover;
-  background-attachment: fixed;
-}
-.project-div h3 > a {
-  font-family: 'Futura', sans-serif;
   color: rgb(0,2,17);
-  text-decoration: none;
 }
-.project-div p {
-  font-family: 'Futura', sans-serif;
-  font-size: 18px;
-}
-.portfolio-wrapper {
-  margin-left: 20vw;
-  margin-right: 20vw;
-  padding-bottom: 5vh;
-}
-.portfolio-item {
-    margin-bottom: 1vh;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-top: 8vh;
-}
-.about-me {
-  height: 60vh;
-  width: 100%;
-  background-color: rgb(0,2,17);
-}
-.about-me h1 {
-  margin-top: 0;
-  font-family: 'Futura', sans-serif;
-  font-size: 30px;
-  color: #FFF;
-}
-.about-me h4 {
-  color: #FFF;
+.resume {
+  height: 120vh;
 }
 .footer {
   height: 25vh;
