@@ -32,7 +32,7 @@ html {
   z-index: 1;
 }
 .navbar-brand {
-  font-size: 40px;
+  font-size: 7vh;
   padding-left: 3vw;
   line-height: 13vh;
   height: 13vh;
@@ -49,7 +49,7 @@ html {
   padding-right: 3vw;
 }
 .nav-links > li > a{
-  font-size: 25px;
+  font-size: 4vh;
   line-height: 13vh;
   height: 13vh;
   padding-right: 1vw;
@@ -83,12 +83,12 @@ html {
 }
 .contact-bar a {
     text-decoration: none;
-    font-size: 60px;
+    font-size: 7vh;
     color: rgb(255,255,255);
     display: block;
     float: none;
     transition: 0.3s;
-    padding-top: 1.8vh;
+    padding-top: 3.7vh;
 }
 .contact-bar a:hover {  color: #808080 !important;}
 .name {
@@ -110,8 +110,8 @@ html {
   vertical-align: middle;
 }
 .name-wrap h1 {
-  font-size: 200px;
-  line-height: 150px;
+  font-size: 29vh;
+  line-height: 24vh;
   margin-bottom: 0;
 }
 .name-wrap h2 {
