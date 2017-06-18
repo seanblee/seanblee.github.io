@@ -8,9 +8,6 @@
 html {
   animation: fadeIn 2s;
 }
-body {
-  height: 100%;
-}
 .header-div {
   height: 100vh;
   width: 100%;
@@ -80,7 +77,7 @@ body {
     top: 14vh;
     bottom: 14vh;
     right: 0;
-    background-color: rgba(0,2,17,0.8);
+    background-color: rgba(0,3,24,0.8);
     overflow-x: hidden;
     transition: 0.5s;
     text-align: center;
@@ -97,6 +94,39 @@ body {
     padding-top: 3.7vh;
 }
 .contact-bar a:hover {  color: #808080 !important;}
+.tune-bar {
+    height: auto;
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 14vh;
+    left: 0;
+    background-color: rgba(0,3,24,0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+}
+.tune-bar a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 7vh;
+    color: rgb(255,255,255);
+    transition: 0.3s;
+    display: table;
+    text-align: center;
+}
+.tune-wrap span {
+  vertical-align: middle;
+  display: table-cell;
+  transition: 0.3s
+}
+.tune-bar iframe {
+  width: 0;
+  height: 0;
+  transition: 0.3s;
+}
+.tune-bar a:hover {  color: #808080 !important;}
 .name {
   position: absolute;
   top: 0;
@@ -106,12 +136,12 @@ body {
   display: table;
 }
 .scroll-wrap a {
-  color: rgb(0,2,17);
+  color: rgb(0,3,24);
 }
 .name-wrap {
   padding-bottom: 0vh;
   font-family: 'Futura', sans-serif;
-  color: rgb(0,2,17);
+  color: rgb(0,3,24);
   display: table-cell;
   vertical-align: middle;
 }
@@ -124,10 +154,10 @@ body {
   margin-top: 0;
 }
 .about-site {
-  height: 35vh;
-  background-color: rgb(0,2,17);
+  background-color: rgb(0,3,24);
   text-align: center;
   display: table;
+  width: 100%;
 }
 .about-site-wrap {
   float: none;
@@ -135,6 +165,8 @@ body {
   vertical-align: middle;
   padding-left: 12vw;
   padding-right: 12vw;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 .about-site-wrap h1 {
   font-family: 'Futura', sans-serif;
@@ -159,42 +191,91 @@ body {
 .portfolio-wrapper {
   margin-left: 20vw;
   margin-right: 20vw;
-  padding-bottom: 5vh;
+  padding-bottom: 8vh;
 }
 .portfolio-item {
-    margin-bottom: 1vh;
     padding-left: 1vw;
     padding-right: 1vw;
     padding-top: 8vh;
 }
 .about-me {
-  height: 60vh;
   width: 100%;
-  background-color: rgb(0,2,17);
-}
-.about-me h1 {
-  margin-top: 0;
+  background-color: rgb(0,3,24);
   font-family: 'Futura', sans-serif;
-  font-size: 30px;
-  color: #FFF;
-}
-.about-me h4 {
-  color: #FFF;
-}
-.footer {
-  height: 25vh;
-  width: 100%;
-  background-color: rgb(0,2,17);
-  display: table;
   text-align: center;
 }
+.about-me-text {
+  padding-top: 8vh;
+  margin-top: 0;
+  font-size: 50px;
+  color: #FFF;
+}
+.h-line {
+  padding-top: 8vh;
+  margin-top: 0;
+  font-size: 50px;
+  color: #FFF;
+  overflow: hidden;
+}
+.about-me h3 {
+  color: #FFF;
+  font-size: 25px;
+  padding-bottom: 8vh;
+}
+.engineer-experiment, .descript {
+  margin: 0;
+}
+.engineer-experiment-bs {
+  background-color: #FFF;
+  padding: 5vh;
+  text-align: center;
+  font-family: 'Futura', sans-serif;
+}
+.engineer-experiment-bs img {
+  display: block;
+  margin: auto;
+}
+.engineer-experiment-bs h1 {
+  font-size: 30px;
+}
+.engineer-experiment-bs h2 {
+  font-size: 20px;
+}
+.engineer, .experiment, .design, .deliver {
+  padding: 8vh;
+  color: rgb(0,3,24);
+}
+.footer {
+  width: 100%;
+  background-color: rgb(0,3,24);
+}
 .footer-wrap {
-  display: table-cell;
-  vertical-align: bottom;
   color: #FFF;
   font-size: 15px;
   font-family: 'Futura', sans-serif;
-  padding-bottom: 2vh
+  padding-bottom: 2vh;
+}
+.footer-bits {
+  text-align: left;
+  padding-left: 3vw;
+}
+.contact-me {
+  border-right-style: solid;
+  border-right-width: 2px;
+  color: #FFF
+}
+.contact-you {
+  border-right-style: solid;
+  border-right-width: 2px;
+  color: #FFF;
+}
+.footer-bits p {
+  font-family: 'Futura', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+}
+.footer-wrap {
+  text-align: center;
 }
 .footer-wrap a {
   color: #FFF !important;
@@ -203,6 +284,10 @@ body {
 }
 .footer-wrap a:hover {
   color: #808080 !important;
+}
+.footer-wrap p {
+  margin-top: 3vh;
+  color: #808080;
 }
 
 .noIbar {
@@ -214,7 +299,7 @@ cursor:default;
 }
 @media only screen and (max-width: 768px) {
     .main-bar {
-        background-color: rgb(0,2,17) !important;
+        background-color: rgb(0,3,24) !important;
     }
     .nav-links > li > a{
         color: #FFF !important;

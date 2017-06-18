@@ -82,32 +82,6 @@
       </div>
   </body>
 
-  <script type="text/javascript" src="../libraries/skrollr.min.js"></script>
-  <script type="text/javascript">
-  	var s = skrollr.init();
-  </script>
-  <script type="text/javascript">
-    window.smoothScroll = function(target) {
-      var scrollContainer = target;
-      do {
-          scrollContainer = scrollContainer.parentNode;
-          if (!scrollContainer) return;
-          scrollContainer.scrollTop += 1;
-      } while (scrollContainer.scrollTop == 0);
-
-      var targetY = -document.getElementById('mainBar').clientHeight;;
-      do {
-          targetY += target.offsetTop;
-      } while (target = target.offsetParent);
-
-      scroll = function(c, a, b, i) {
-          i++; if (i > 30) return;
-          c.scrollTop = a + (b - a) / 30 * i;
-          setTimeout(function(){ scroll(c, a, b, i); }, 20);
-      }
-      scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-  }
-  </script>
   <script>
     var a = 0;
     function openContact() {
