@@ -225,11 +225,19 @@ html {
 .engineer-experiment, .descript {
   margin: 0;
 }
-.engineer-experiment-bs {
-  background-color: #FFF;
-  padding: 5vh;
+.instruct-eng {
+  margin: 0;
   text-align: center;
   font-family: 'Futura', sans-serif;
+  padding-top: 5vh;
+  background-color: #FFF;
+}
+.engineer-experiment-bs {
+  text-align: center;
+  font-family: 'Futura', sans-serif;
+  padding-top: 4vh;
+  padding-bottom: 8vh;
+  background-color: #FFF;
 }
 .engineer-experiment-bs img {
   display: block;
@@ -244,6 +252,12 @@ html {
 .engineer, .experiment, .design, .deliver {
   padding: 8vh;
   color: rgb(0,3,24);
+  border-radius: 50px;
+  transition: 0.4s;
+}
+.engineer:hover, .experiment:hover, .design:hover, .deliver:hover {
+  background-color: rgba(0,2,17,0.8);
+  color: #FFF;
 }
 .footer {
   width: 100%;
