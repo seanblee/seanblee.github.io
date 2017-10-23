@@ -33,6 +33,7 @@ html {
   border: none;
   font-family: 'Futura', sans-serif;
   z-index: 1;
+
 }
 .navbar-brand {
   font-size: 7vh;
@@ -165,13 +166,19 @@ html {
   vertical-align: middle;
   padding-left: 12vw;
   padding-right: 12vw;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
 }
 .about-site-wrap h1 {
   font-family: 'Futura', sans-serif;
   font-size: 25px;
   color: #FFF;
+}
+.carousel{
+    box-shadow: 0 8px 6px -6px #999;
+}
+.onblue {
+  color: rgb(0,3,24);
 }
 .project-div {
   height: auto;
@@ -198,31 +205,9 @@ html {
     padding-right: 1vw;
     padding-top: 8vh;
 }
-.about-me {
-  width: 100%;
-  background-color: rgb(0,3,24);
-  font-family: 'Futura', sans-serif;
-  text-align: center;
-}
-.about-me-text {
-  padding-top: 8vh;
-  margin-top: 0;
-  font-size: 50px;
-  color: #FFF;
-}
-.h-line {
-  padding-top: 8vh;
-  margin-top: 0;
-  font-size: 50px;
-  color: #FFF;
-  overflow: hidden;
-}
-.about-me h3 {
-  color: #FFF;
-  font-size: 25px;
-  padding-bottom: 8vh;
-}
+
 .engineer-experiment, .descript {
+  background-color: rgb(0,3,24);
   margin: 0;
 }
 .instruct-eng {
