@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class = "full" lang = "en" >
+  <head>
+    <meta charset = "utf-8" name = "viewport" content = "width=device-width, initial-scale=1">
+
+    <!- Page properties->
+    <title>Sean Lee</title>
+    <link rel = "icon" href = "pics/favicon.png"/>
+
+    <!-BootStrap Dependencies->
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <!-Fontsheets->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-CDN->
+    <script src="https://use.fontawesome.com/70ec8b1c3b.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $( function() {
+        $( "#draggable" ).draggable({handle: ".title-bar", stack: "div", containment: ".limit-wrapper"});
+        $( "#draggable2" ).draggable({handle: ".title-bar", stack: "div", containment: ".limit-wrapper"});
+        $( "#draggable3" ).draggable({handle: ".title-bar", stack: "div", containment: ".limit-wrapper"});
+        $( "#draggable4" ).draggable({handle: ".title-bar", stack: "div", containment: ".limit-wrapper"});
+      } );
+    </script>
+
+    <!-Stylesheets->
+    <link rel = "stylesheet" href = "css/spread.css">
+
+  </head>
+
+  <body>
+    <!- Share Bar ->
+    <div class = "row share" id = "share">
+      <div class = "connect-wrap col-sm-4">
+        <ul class = "nav navbar-nav vcenter">
+        </ul>
+      </div>
+      <div class = "share-wrap col-sm-4">
+        <ul class = "nav navbar-nav vcenter">
+          <li class = "glyph-wrap"><a href="https://www.facebook.com/sean.lee.167"><i class="fa fa-facebook"></i></a></li>
+          <li class = "glyph-wrap"><a href="http://github.com/seanblee"><i class="fa fa-github"></i></a></li>
+          <li class = "glyph-wrap"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class = "close-wrap col-sm-4">
+        <ul class = "nav navbar-nav vcenter">
+          <li class = "glyph-wrap"><a href="#"><span class = "glyphicon glyphicon-remove" onclick = "closeShare()"></span></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!- Menu ->
+    <div class = "menu-wrapper">
+      <div id = "sideMenu" class = "side-menu">
+        <nav class = "navbar navbar-default center">
+          <div class = "navbar-right"
+            <ul class = "nav navbar-nav">
+              <a href="#"><span class = "glyphicon glyphicon-remove" onclick = "closeMenu()"></span></a>
+            </ul>
+          </div>
+          <div class = "navbar-inner">
+            <ul class = "nav navbar-nav">
+              <li><a href = "#"><span class = "glyphicon glyphicon-user"> About</a></li>
+              <li><a href = "#"><span class = "glyphicon glyphicon-briefcase  "> Projects</a></li>
+              <li><a href = "#"><span class = "glyphicon glyphicon-file"> Resume</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  </div>
+
+  <div class = "operating-wrapper" id = "operatingWrapper">
+  <div class = "limit-wrapper">
+
+  <!- Navigation Bar ->
+    <div class = "container-fluid main">
+      <ul class = "nav navbar-nav">
+        <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-menu-hamburger" onclick = "openMenu()"></span></a></li>
+      </ul>
+      <ul class = "nav navbar-nav navbar-right">
+        <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-retweet" onclick = "cycleWallpaper()"></span></a></li>
+        <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-comment" onclick = "openShare()"></span></a></li>
+        <li class = "glyph-wrap"><a href="#"><span class="glyphicon glyphicon-question-sign" onclick = "openMenu()"></span></a></li>
+      </ul>
+    </div>
+
+  <!-About Window->
+  <div id = "draggable" class = "window about-window">
+  <div id = "titleBar draggable" class = "row title-bar">
+    <div class = "col-sm-4"></div>
+    <div class = "window-title col-sm-4">
+      <ul class = "nav navbar-nav vcenter noIbar">
+          About Me:~
+      </ul>
+    </div>
+    <div class = "window-options col-sm-4">
+      <ul class = "nav navbar-nav vcenter">
+        <li class = "option-wrap"><span class = "glyphicon glyphicon-remove"></span></li>
+      </ul>
+    </div>
+  </div>
+  <div class = "header">
+    <h1 class = "termtext">
+      [user@localhost ~]$ <span class = "value">screenfetch -n</span>
+      <br/>
+    <br/>Name: <span class="value">Sean lee</span>
+    <br/>OS: <span class="value">grossLinux</span>
+    <br/>School: <span class="value">Queen's University</span>
+    <br/>Degree: <span class="value">Computer Engineering</span>
+    <br/>Website: <span class="value">version: ?.?.?</span>
+    <br/>Description: <span class="value">I styled this website to resemble a linux distro workspace, check out the shell simulation I wrote in javascript!</span>
+    <br/><br/><br/>
+    <br/>Libraries and Frameworks: <span class="value">jQuery, Swordfish90, bootstrap</span>
+    <br/>Font: <span class="value">Menlo</span></h1>
+  </div>
+  </div>
+
+    <!-Terminal->
+  <div id = "draggable2" class = "window terminal-window">
+  <div id = "titleBar2 draggable2" class = "row title-bar">
+    <div class = "col-sm-4"></div>
+    <div class = "window-title col-sm-4">
+      <ul class = "nav navbar-nav vcenter noIbar">
+          Terminal
+      </ul>
+    </div>
+    <div class = "window-options col-sm-4">
+      <ul class = "nav navbar-nav vcenter">
+        <li class = "option-wrap"><span class = "glyphicon glyphicon-remove"></span></li>
+      </ul>
+    </div>
+  </div>
+  <div class = "search">
+      <input type = "text" class = "form-control" autofocus>
+  </div>
+  </div>
+
+  <!-Drawing->
+  <div id = "draggable3" class = "window drawing-window">
+  <div id = "titleBar3 draggable3" class = "row title-bar">
+    <div class = "col-sm-4"></div>
+    <div class = "window-title col-sm-4">
+      <ul class = "nav navbar-nav vcenter noIbar">
+          user@localhost:~
+      </ul>
+    </div>
+    <div class = "window-options col-sm-4">
+      <ul class = "nav navbar-nav vcenter">
+        <li class = "option-wrap"><span class = "glyphicon glyphicon-remove"></span></li>
+      </ul>
+    </div>
+  </div>
+  <div class = "header">
+    <h1 class = "termtext">[user@localhost ~]$ <span class = "value">screenfetch -L</span><h1>
+  </div>
+  <h1><pre>    ./"-.                 .-"\.
+  ./**+++\.-~~"""""~~-..-/+++*\.
+ /***++++/++++++++++++++ \++++**\
+|**+++++/++++-----........\+++++*|
+|#+++++|+---------.........|++++#|
+ \#++++|-----------........|+++#/
+  \#++++\------------...../+++#/
+   \#+++#\-------------../#++#/
+    |#+###/\------------/\##+|
+    \#++#/|@|\--------/@|\#+#/
+     \#+/ |@|  \-----/|@| \#/
+      \/   \@|  |-..| |@\ |/
+ 	    \@| |-../ \@|
+	     \| /-./   \|
+            ___/-./
+           >_____/</pre></h1>
+  </div>
+
+  <!-header->
+  <div id = "draggable4" class = "window header-window">
+  <div id = "titleBar4 draggable4" class = "row title-bar">
+    <div class = "col-sm-4"></div>
+    <div class = "window-title col-sm-4">
+      <ul class = "nav navbar-nav vcenter noIbar">
+          Name App
+      </ul>
+    </div>
+    <div class = "window-options col-sm-4">
+      <ul class = "nav navbar-nav vcenter">
+        <li class = "option-wrap"><span class = "glyphicon glyphicon-remove"></span></li>
+      </ul>
+    </div>
+  </div>
+  <h1><pre>8""""8                     8
+8      eeee eeeee eeeee    8     eeee eeee
+8eeeee 8    8   8 8   8    8e    8    8
+    88 8eee 8eee8 8e  8    88    8eee 8eee
+e   88 88   88  8 88  8    88    88   88
+8eee88 88ee 88  8 88  8    88eee 88ee 88ee
+
+           >Computer Engineer></pre></h1>
+  </div>
+
+  </div>
+  </div>
+
+
+  <!-Scripts->
+  <script>
+    var backgrounds = new Array();
+    var curWallpaper = [0];
+    backgrounds[0] = new Image();
+    backgrounds[0].src = 'pics/wallpapers/10.png';
+    backgrounds[1] = new Image();
+    backgrounds[1].src = 'pics/wallpapers/11.png';
+    backgrounds[2] = new Image();
+    backgrounds[2].src = 'pics/wallpapers/12.png';
+    backgrounds[3] = new Image();
+    backgrounds[3].src = 'pics/wallpapers/13.png';
+    backgrounds[4] = new Image();
+    backgrounds[4].src = 'pics/wallpapers/14.jpg';
+    backgrounds[5] = new Image();
+    backgrounds[5].src = 'pics/wallpapers/15.jpg';
+    function cycleWallpaper(){
+      $('body').css('background-image', 'url(' + backgrounds[curWallpaper].src + ')');
+      curWallpaper++;
+      if (curWallpaper == backgrounds.length){
+        curWallpaper = 0;
+      }
+      document.body.style.backgroundSize = "cover";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundPosition = "center";
+    }
+    function openMenu(){
+      document.getElementById("sideMenu").style.width = "100%";
+      document.getElementById("sideMenu").style.height = "100%";
+    }
+    function openShare(){
+      document.getElementById("share").style.backgroundColor = "rgba(255,255,255,0)";
+      document.getElementById("share").style.height = "200px";
+    }
+    function closeShare(){
+      document.getElementById("share").style.height = "0px";
+      document.getElementById("share").style.backgroundColor = "rgba(255,255,255,1)";
+    }
+    function closeMenu(){
+      document.getElementById("sideMenu").style.width= "0%";
+      document.getElementById("sideMenu").style.height = "0%";
+    }
+  </script>
+
+  </body>
+
+</html>

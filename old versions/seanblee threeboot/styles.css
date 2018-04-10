@@ -1,0 +1,301 @@
+@font-face {
+   font-family: 'Futura';
+   src: url('fonts/futura.otf') format('opentype');
+}
+*{
+  -webkit-overflow-scrolling: touch;
+}
+html {
+  animation: fadeIn 2s;
+}
+.header-div {
+  height: 100vh;
+  width: 100%;
+}
+.header-div video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url('pics/test.jpg') no-repeat;
+    background-size: cover;
+}
+.main-bar {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  font-family: 'Futura', sans-serif;
+  z-index: 1;
+
+}
+.navbar-brand {
+  font-size: 7vh;
+  padding-left: 3vw;
+  line-height: 13vh;
+  height: 13vh;
+  padding-top: 0;
+}
+.navbar-collapse {
+  border-top: none;
+  box-shadow: none;
+}
+.navbar-header {
+  border: none !important;
+}
+.nav-links {
+  padding-right: 3vw;
+}
+.nav-links > li > a{
+  font-size: 4vh;
+  line-height: 13vh;
+  height: 13vh;
+  padding-right: 1vw;
+  padding-top: 0px;
+}
+.nav-links a:hover { color: #d3d3d3 !important;}
+.navbar-toggle {
+  border: none;
+}
+.navbar-toggle > span {
+  background-color: #FFF !important;
+}
+.navbar-toggle:hover span{  background-color: #000080 !important;}
+.navbar-toggle:hover {  background-color: #FFF !important;}
+.navbar-toggle:focus {  background-color: #FFF !important;}
+.navbar-toggle:focus span{  background-color: #000080 !important;}
+.contact-bar {
+    height: auto;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 14vh;
+    bottom: 14vh;
+    right: 0;
+    background-color: rgba(0,3,24,0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+}
+.contact-bar a {
+    text-decoration: none;
+    font-size: 7vh;
+    color: rgb(255,255,255);
+    display: block;
+    float: none;
+    transition: 0.3s;
+    padding-top: 3.7vh;
+}
+.contact-bar a:hover {  color: #808080 !important;}
+.tune-bar {
+    height: auto;
+    width: auto;
+    position: fixed;
+    z-index: 1;
+    top: 14vh;
+    left: 0;
+    background-color: rgba(0,3,24,0.8);
+    overflow-x: hidden;
+    transition: 0.5s;
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+}
+.tune-bar a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 7vh;
+    color: rgb(255,255,255);
+    transition: 0.3s;
+    display: table;
+    text-align: center;
+}
+.tune-wrap span {
+  vertical-align: middle;
+  display: table-cell;
+  transition: 0.3s
+}
+.tune-bar iframe {
+  width: 0;
+  height: 0;
+  transition: 0.3s;
+}
+.tune-bar a:hover {  color: #808080 !important;}
+.name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: table;
+}
+.scroll-wrap a {
+  color: rgb(0,3,24);
+}
+.name-wrap {
+  padding-bottom: 0vh;
+  font-family: 'Futura', sans-serif;
+  color: rgb(0,3,24);
+  display: table-cell;
+  vertical-align: middle;
+}
+.name-wrap h1 {
+  font-size: 29vh;
+  line-height: 24vh;
+  margin-bottom: 0;
+}
+.name-wrap h2 {
+  margin-top: 0;
+}
+.about-site {
+  background-color: rgb(0,3,24);
+  text-align: center;
+  display: table;
+  width: 100%;
+}
+.blank{
+  height: 20vh;
+    background-color: rgb(0,3,24);
+}
+.about-site-wrap {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.about-site-wrap h1 {
+  font-family: 'Futura', sans-serif;
+  font-size: 25px;
+  color: #FFF;
+}
+.spec-wrap h1 {
+  font-family: 'Futura', sans-serif;
+  font-size: 40px;
+  color: #FFF;
+}
+.spec-wrap {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 12vw;
+  padding-right: 12vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+.carousel-control.left, .carousel-control.right{
+    background-image: none;
+    opacity: 1;
+    width: 5vw;
+    color: #C0C0C0;
+}
+
+.onblue {
+  color: rgb(0,3,24);
+  font-family: 'Futura', sans-serif;
+}
+.project-div {
+  height: auto;
+  background: white;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.project-div h3 > a {
+  font-family: 'Futura', sans-serif;
+  color: rgb(0,2,17);
+  text-decoration: none;
+}
+.project-div p {
+  font-family: 'Futura', sans-serif;
+  font-size: 18px;
+}
+.portfolio-wrapper {
+  margin-left: 20vw;
+  margin-right: 20vw;
+  padding-bottom: 8vh;
+}
+.portfolio-item {
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 8vh;
+}
+
+.engineer-experiment, .descript {
+  background-color: rgb(0,3,24);
+  margin: 0;
+}
+
+.contact-form{
+  height: 15vh;
+  background-color: rgb(0,3,24);
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(0,3,24);
+}
+.footer-wrap {
+  color: #FFF;
+  font-size: 15px;
+  font-family: 'Futura', sans-serif;
+  padding-bottom: 2vh;
+}
+.footer-bits {
+  text-align: left;
+  padding-left: 3vw;
+}
+.contact-me {
+  border-right-style: solid;
+  border-right-width: 2px;
+  color: #FFF
+}
+.contact-you {
+  border-right-style: solid;
+  border-right-width: 2px;
+  color: #FFF;
+}
+.footer-bits p {
+  font-family: 'Futura', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+}
+.footer-wrap {
+  text-align: center;
+}
+.footer-wrap a {
+  color: #FFF !important;
+  font-size: 25px;
+  padding: 5px 20px 20px;
+}
+.footer-wrap a:hover {
+  color: #808080 !important;
+}
+.footer-wrap p {
+  margin-top: 3vh;
+  color: #808080;
+}
+
+.noIbar {
+cursor:default;
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@media only screen and (max-width: 768px) {
+    .main-bar {
+        background-color: rgb(0,3,24) !important;
+    }
+    .nav-links > li > a{
+        color: #FFF !important;
+    }
+}

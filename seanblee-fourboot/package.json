@@ -2,23 +2,30 @@
   "name": "seanblee-fourboot",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://seanblee.com",
   "dependencies": {
+    "gh-pages": "^1.1.0",
+    "gulp": "^3.9.1",
     "gulp-changed": "^3.1.1",
     "gulp-clean-css": "^3.9.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "ngrok": "^2.2.24",
     "react": "^16.2.0",
+    "react-anime": "^2.0.1",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17"
+    "react-popper": "^0.7.4",
+    "react-scripts": "1.0.17",
+    "typed.js": "^2.0.6"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-sass": "^3.1.0"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   }
 }
