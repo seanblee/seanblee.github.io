@@ -53,7 +53,7 @@ html {
   padding-right: 3vw;
 }
 .nav-links > li > a{
-  font-size: 4vh;
+  font-size: 3.8vh;
   line-height: 13vh;
   height: 13vh;
   padding-right: 1vw;
@@ -140,11 +140,11 @@ html {
   color: rgb(0,3,24);
 }
 .name-wrap {
-  padding-bottom: 0vh;
   font-family: 'Futura', sans-serif;
   color: rgb(0,3,24);
   display: table-cell;
   vertical-align: middle;
+  padding-bottom: 8vh;
 }
 .name-wrap h1 {
   font-size: 29vh;
@@ -153,9 +153,35 @@ html {
 }
 .name-wrap h2 {
   margin-top: 0;
+  font-size: 4vh;
+  padding-bottom: 1vh;
 }
+.resume-button {
+  background-color: rgba(0,0,0,0);
+  font-size: 3vh;
+  border: 2px solid;
+}
+.resume-button:hover{
+  border-color: rgb(255,255,255);
+  color: rgb(255,255,255);
+}
+.resume-button:focus {outline:0;}
 
-
+.footer {
+  width: 100%;
+  display: table;
+  position: fixed;
+  bottom: 0;
+}
+.footer-wrap {
+  display: table-cell;
+  vertical-align: bottom;
+  color: rgb(0,0,0);
+  font-size: 2vh;
+  font-family: 'Futura', sans-serif;
+  padding-bottom: 2vh;
+  padding-left: 3.5vh;
+}
 
 
 .noIbar {

@@ -52,8 +52,8 @@
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav navbar-right nav-links">
             <li><a href="#" onclick = "openContact()">contact</a></li>
-            <li><a href="#">projects</a></li>
-            <li><a href="pages/resume.html">resume</a></li>
+            <li><a href="pages/about.html">about</a></li>
+            <li><a href="pages/projects.html">projects</a></li>
           </ul>
         </div>
       </div>
@@ -72,10 +72,12 @@
 
   <!- Name and Description ->
     <div class = "name">
-
       <div class = "name-wrap">
         <h1 class = "noIbar">Sean Lee</h1>
-        <h2><div class = "typed_wrap"><span id="typed"></span></h2>
+        <h2><div class = "typed-wrap"><span id="typed"></span></h2>
+        <form method = "get" action = "pages/resume.pdf">
+          <button class = "resume-button">Download Resume</button>
+        </form>
       <script>
           var options = {
             strings: [
@@ -92,9 +94,17 @@
           }
           var typed = new Typed("#typed", options);
       </script>
-
       </div>
     </div>
+  </div>
+
+  <!- Footer ->
+    <div class = "footer">
+      <div class = "footer-wrap">
+        <p>©2017 Sean B Lee.
+      </div>
+    </div>
+</body>
 
 
   <script>
