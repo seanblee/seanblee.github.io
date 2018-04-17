@@ -224,6 +224,10 @@ cursor:default;
   .footer{
     display: none;
   }
+  .resume-button:hover{
+    border-color: rgb(0,0,0);
+    color: rgb(0,0,0);
+  }
     .mobile-wrap{
       animation: fadein 2s;
       display: block;
