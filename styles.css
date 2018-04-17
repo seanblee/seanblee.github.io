@@ -182,7 +182,10 @@ html {
   padding-bottom: 2vh;
   padding-left: 3.5vh;
 }
-
+.mobile-wrap{
+  display: none;
+  font-family: 'Roboto', sans-serif;
+}
 
 .noIbar {
 cursor:default;
@@ -192,10 +195,37 @@ cursor:default;
     to {opacity: 1;}
 }
 @media only screen and (max-width: 768px) {
-    .main-bar {
-        background-color: rgb(0,3,24) !important;
+    .mobile-wrap{
+      animation: fadein 2s;
+      display: block;
+      padding-left: 4vw;
+      overflow: hidden;
     }
-    .nav-links > li > a{
-        color: #FFF !important;
+    .mobile-wrap  p{
+        font-size: 3vw;
+        padding-right: 4vw;
+      }
+    .mobile-wrap  h1{
+        font-size: 6.5vw;
+        color: #993333;
+        margin-bottom: 5px;
+      }
+    .mobile-wrap  ul{
+        padding-left: 0vw;
+        li{
+          font-size: 5vw;
+          color: #993333;
+          list-style: none;
+        }
+      .mobile-wrap  h1{
+          margin-top: 5px;
+          font-size: 4vw;
+        }
+      .mobile-wrap  p{
+          padding-right: 4vw;
+          font-size: 3vw;
+        }
+      }
     }
+
 }
