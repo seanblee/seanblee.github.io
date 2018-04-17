@@ -2,6 +2,10 @@
    font-family: 'Futura';
    src: url('fonts/futura.otf') format('opentype');
 }
+@font-face {
+   font-family: 'Roboto';
+   src: url('fonts/Roboto-Regular.ttf') format('opentype');
+}
 *{
   -webkit-overflow-scrolling: touch;
 }
@@ -195,6 +199,31 @@ cursor:default;
     to {opacity: 1;}
 }
 @media only screen and (max-width: 768px) {
+  .name {
+    position: relative;
+  }
+  .name-wrap{
+    padding-bottom: 5vw;
+  }
+  .name-wrap h1 {
+    font-size: 22vw;
+    line-height: 24vw;
+    margin-bottom: 0;
+  }
+  .name-wrap h2 {
+    margin-top: 0;
+    font-size: 4vw;
+    padding-bottom: 1vw;
+  }
+  .header-div {
+    display: none;
+  }
+  .main-bar{
+    display: none;
+  }
+  .footer{
+    display: none;
+  }
     .mobile-wrap{
       animation: fadein 2s;
       display: block;
@@ -212,8 +241,9 @@ cursor:default;
       }
     .mobile-wrap  ul{
         padding-left: 0vw;
-        li{
-          font-size: 5vw;
+      }
+      .mobile-wrap  li{
+          font-size: 4vw;
           color: #993333;
           list-style: none;
         }
