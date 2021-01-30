@@ -35,8 +35,21 @@
         font-size: 5em;
         line-height: 1em;
     }
+    .location-pin {
+        font-size: 1.5em;
+    }
+    .landing-button {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .landing-button-text {
+        font-family: "Segoe";
+        font-size: 1.2em;
+    }
     .typed-text {
-        visibility: hidden;
+        display: none;
     }
     .spacer {
         flex: 0;
@@ -52,8 +65,19 @@
     .name-hero {
         font-size: 9em;
     }
+    .landing-button {
+        padding-top: 1.4em;
+        padding-bottom: 1.4em;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    .landing-button-text {
+        font-size: 1.3em;
+    }
     .typed-text {
-        visibility: visible;
+        display: flex;
+        font-size: 1.6em;
+        line-height: 0.8em;
     }
 }
 @media (min-width: 85em) {
@@ -61,22 +85,44 @@
         padding-left: 0em;
     }
     .intro-hero {
-        font-size: 2em;
+        font-size: 1.8vw;
     }
     .name-hero {
-        font-size: 8em;
+        font-size: 8vw;
+        line-height: 0.9em;
+    }
+    .landing-button {
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .landing-button-text {
+        font-size: 1.2vw;
+    }
+    .location-pin {
+        font-size: 1.1vw;
+        line-height: 0.8em;
+    }
+    .nav-link {
+        font-size: 1.4em;
     }
     .spacer {
         flex: 1;
     }
+    .typed-text {
+        display: flex;
+        font-size: 1.3vw;
+        line-height: 0.8em;
+    }
 }
 @media (min-width: 160em) {
-    .intro-hero {
-        font-size: 2em;
+    .nav-link {
+        font-size: 1.8em;
     }
 }
 
-.EmailBar {
+.email-bar {
     color: #f04f0c;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -84,44 +130,43 @@
     padding-bottom: 1vw;
     font-family: "Consolas";
 }
-.EmailSeparator {
+.email-separator {
     border-left: 1px solid #f04f0c;
     height: 75px;
 }
-.EmailButton:hover {
-    cursor: pointer;
-}
-.LandingButton {
+.landing-button {
     cursor: pointer;
     user-select: none;
     color: #153b50;
     border: solid;
     border-color: #153b50;
 }
-.LandingButton:hover {
+.landing-button:hover {
     color: #EF7B45;
     border-color: #EF7B45;
     transform: translateY(2px);
 }
-.LandingButton:active {
+.landing-button:active {
     color: #f04f0c;
     border-color: #f04f0c;
     transform: translateY(4px);
 }
-.NavLink {
+.landing-button-text {
+    line-height: 1.3vw;
+}
+.nav-link {
     cursor: pointer;
     user-select: none;
     color: #7c828e;
     font-family: "Consolas";
-    font-size: 1.2vw;
     padding-left: 3vw;
     padding-right: 3vw;
 }
-.NavLink:hover {
+.nav-link:hover {
     color: #042a2b;
     transform: translateY(2px);
 }
-.NavLink:active {
+.nav-link:active {
     color: #03191a;
     transform: translateY(4px);
 }
@@ -129,7 +174,6 @@
 .typed-text {
     font-family: Consolas;
     font-weight: bold;
-    font-size: 1.8vw;
     color: #EF7B45;
     padding-top: 1.5vw;
     padding-bottom: 1vw;

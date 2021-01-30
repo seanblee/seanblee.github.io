@@ -20,9 +20,6 @@ const sleep = (milliseconds) => {
 class Landing extends Component {
     constructor() {
         super();
-        this.state= {
-           email: "seanlee1997@live.com"
-        }
      }
 
     componentDidMount() {
@@ -65,11 +62,6 @@ class Landing extends Component {
         });
     };
 
-    copyEmail = (e) => {
-        navigator.clipboard.writeText("seanlee1997@live.com");
-        this.changeTitle();
-    }
-
     render() {
         return (
             <Section id="landing" backgroundColor="#042a2b">
@@ -82,13 +74,13 @@ class Landing extends Component {
                         height="100%"
                         alignItems="center"
                         px="5vw">
-                            <Text className="NavLink" onClick={() => this.scrollTo('about')}>
+                            <Text className="nav-link" onClick={() => this.scrollTo('about')}>
                                 about
                             </Text>
-                            <Text className="NavLink" onClick={() => this.scrollTo('work')}>
+                            <Text className="nav-link" onClick={() => this.scrollTo('work')}>
                                 work
                             </Text>
-                            <Text className="NavLink" onClick={() => this.scrollTo('projects')}>
+                            <Text className="nav-link" onClick={() => this.scrollTo('projects')}>
                                 projects
                             </Text>
                         </Flex>
@@ -99,17 +91,16 @@ class Landing extends Component {
                         flexDirection="column"
                         alignItems="center"
                         justifyContent="flex-end">
-                            <span className="EmailSeparator"/>
+                            <span className="email-separator"/>
                             <Flex
-                            className="EmailButton"
-                            onClick={this.copyEmail}>
+                            className="email-button">
                                 <Text
-                                className="EmailBar"
+                                className="email-bar"
                                 >
-                                {this.state.email}
+                                    seanlee1997@live.com
                                 </Text>
                             </Flex>
-                            <span className="EmailSeparator"/>
+                            <span className="email-separator"/>
                         </Flex>
                     </EmailBar>
                     <Flex
@@ -153,9 +144,7 @@ class Landing extends Component {
                                 <Text
                                 className="location-pin"
                                 color="#666666"
-                                lineHeight="1.5vw"
-                                fontFamily="Segoel"
-                                fontSize="1.5vw">
+                                fontFamily="Segoel">
                                     📍Seattle, WA
                                 </Text>
                                 <Flex
@@ -163,14 +152,11 @@ class Landing extends Component {
                                 pt="1.5vw">
                                     <Flex>
                                         <Box
-                                        className="LandingButton"
-                                        px="3vw"
-                                        py="1vw"
+                                        className="landing-button"
                                         onClick={this.openLinked}
                                         >
                                             <Text
-                                            fontSize="1.3vw"
-                                            lineHeight="1.3vw">
+                                            className="landing-button-text">
                                                 connect
                                             </Text>
                                         </Box>
@@ -178,13 +164,10 @@ class Landing extends Component {
                                     <Flex
                                     pl="1.5vw">
                                         <Box
-                                        className="LandingButton"
-                                        px="3vw"
-                                        py="1vw"
+                                        className="landing-button"
                                         onClick={this.openResume}>
                                             <Text
-                                            fontSize="1.3vw"
-                                            lineHeight="1.3vw">
+                                            className="landing-button-text">
                                                 view resume
                                             </Text>
                                         </Box>

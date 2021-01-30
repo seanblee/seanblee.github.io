@@ -21,25 +21,24 @@ class About extends Component {
                     flexWrap = "wrap"
                     mb = "12vw">
                         <Flex
-                        width="550px"
+                        className="about-text-div"
                         flexDirection="column"
                         mx="2vw">
                             <Flex
                             flexDirection="column"
                             width="fit-content">
                                 <Text
+                                className="about-header"
                                 color="#cdedf6"
                                 fontFamily="Segoe"
-                                fontSize="55px"
                                 fontWeight="bolder">
                                     About Me
                                 </Text>
                                 <span className="orange-underline"/>
                             </Flex>
                             <Text
-                            py="1vw"
+                            className="about-text"
                             color="#cdedf6"
-                            fontSize="16px"
                             fontFamily="consolas">
                                 Hello I'm Sean, a software engineer from Ontario, Canada.
                             {<br/>}{<br/>}
@@ -54,13 +53,11 @@ class About extends Component {
                             </Text>
                         </Flex>
                         <Flex
+                        className="about-image-div"
                         color="#cdedf6"
-                        width="550px"
                         flexDirection="column"
                         alignItems="center"
-                        textAlign="center"
-                        mx="2vw"
-                        mt="2vw">
+                        textAlign="center">
                             <Image 
                             src={fish}
                             sx={{borderRadius: 5, boxShadow: '0 5px 5px 5px rgba(0,0,0,0.2)'}}/>
