@@ -1,0 +1,7 @@
+.FooterLink {
+    cursor: pointer;
+    user-select: none;
+}
+.FooterLink:hover {
+    color: white;
+}

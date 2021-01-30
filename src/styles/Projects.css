@@ -1,0 +1,15 @@
+.ProjectImage {
+    cursor: pointer;
+    user-select: none;
+    border: 3px solid transparent;
+    filter: drop-shadow(3px 3px 3px rgba(0,0,0,0.3));
+}
+.ProjectImage:hover {
+    border: solid 3px;
+    border-color: #EF7B45;
+}
+.ProjectImage:active {
+    border: solid 3px;
+    border-color: #f04f0c;
+    transform: translateY(2px);
+}

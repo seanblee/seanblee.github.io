@@ -1,0 +1,15 @@
+
+@font-face {
+  font-family: 'Consolas';
+  src: url('../fonts/CONSOLA.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoe';
+  src: url('../fonts/Segoe.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Segoel';
+  src: url('../fonts/Segoel.ttf') format('truetype');
+}
