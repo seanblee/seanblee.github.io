@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Flex , Image, Text, Box } from "rebass";
 import "../styles/Work.css";
 import Section from "../components/FlexSection"
-import 'react-vertical-timeline-component/style.min.css';
 import micro from "../media/micrologo.jpg"
 import wyndo from "../media/logo.png"
 import uoft from "../media/uoft.png"
