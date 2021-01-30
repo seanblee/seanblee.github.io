@@ -5,14 +5,12 @@
     left: 0;
     position: absolute;
 }
-
 .email-bar-div {
     width: 4%;
     position: absolute;
     bottom: 0;
     right: 0;
 }
-
 .end-div {
     width: 100%;
     height: 15%;
@@ -25,6 +23,59 @@
     height: 15%;
     position: absolute;
 }
+
+@media (min-width: 16em) {
+    .nav-bar {
+        visibility: hidden;
+    }
+    .intro-hero {
+        font-size: 2.5em;
+    }
+    .name-hero {
+        font-size: 5em;
+        line-height: 1em;
+    }
+    .typed-text {
+        visibility: hidden;
+    }
+    .spacer {
+        flex: 0;
+    }
+}
+@media (min-width: 40em) {
+    .nav-bar {
+        visibility: visible;
+    }
+    .intro-hero {
+        font-size: 2.5em;
+    }
+    .name-hero {
+        font-size: 9em;
+    }
+    .typed-text {
+        visibility: visible;
+    }
+}
+@media (min-width: 85em) {
+    .hero-div {
+        padding-left: 0em;
+    }
+    .intro-hero {
+        font-size: 2em;
+    }
+    .name-hero {
+        font-size: 8em;
+    }
+    .spacer {
+        flex: 1;
+    }
+}
+@media (min-width: 160em) {
+    .intro-hero {
+        font-size: 2em;
+    }
+}
+
 .EmailBar {
     color: #f04f0c;
     writing-mode: vertical-rl;
@@ -77,8 +128,8 @@
   
 .typed-text {
     font-family: Consolas;
-    font-size: 1.8vw;
     font-weight: bold;
+    font-size: 1.8vw;
     color: #EF7B45;
     padding-top: 1.5vw;
     padding-bottom: 1vw;

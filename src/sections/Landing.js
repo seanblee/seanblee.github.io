@@ -77,13 +77,11 @@ class Landing extends Component {
                 <SemiDiv>
                     <NavDiv>
                         <Flex
+                        className="nav-bar"
                         flexDirection="row"
                         height="100%"
                         alignItems="center"
                         px="5vw">
-                            <Text className="NavLink">
-                                SL
-                            </Text>
                             <Text className="NavLink" onClick={() => this.scrollTo('about')}>
                                 about
                             </Text>
@@ -120,6 +118,7 @@ class Landing extends Component {
                     flexDirection="row"
                     >
                         <Flex
+                        className="hero-div"
                         flex="1"
                         justifyContent="center"
                         flexDirection="column"
@@ -127,17 +126,16 @@ class Landing extends Component {
                             <Flex
                             flexDirection="column">
                                 <Text
+                                className="intro-hero"
                                 color="#14213d"
                                 fontFamily="Segoel"
-                                fontSize="1.8vw"
                                 pb="0.5vw">
                                     hey, it's
                                 </Text>
                                 <Text
+                                className="name-hero"
                                 color="#153b50"
-                                lineHeight="7vw"
                                 fontFamily="Segoe"
-                                fontSize="8.5vw"
                                 fontWeight="bolder">
                                     Sean Lee
                                 </Text>
@@ -153,6 +151,7 @@ class Landing extends Component {
                                     backSpeed={25}
                                     loop/>
                                 <Text
+                                className="location-pin"
                                 color="#666666"
                                 lineHeight="1.5vw"
                                 fontFamily="Segoel"
@@ -194,7 +193,7 @@ class Landing extends Component {
                             </Flex>
                         </Flex>
                         <Flex
-                        flex="1">
+                        className="spacer">
                         </Flex>
                     </Flex>
                 </SemiDiv>
