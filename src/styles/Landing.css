@@ -105,7 +105,7 @@
         line-height: 0.8em;
     }
     .nav-link {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
     .spacer {
         flex: 1;
@@ -118,7 +118,7 @@
 }
 @media (min-width: 160em) {
     .nav-link {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 }
 

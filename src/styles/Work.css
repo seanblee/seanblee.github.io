@@ -1,7 +1,32 @@
-
-.TimelineSeparator {
-    border-left: 5px solid #cdedf6;
-    flex: 1;
+@media (min-width: 14em) {
+  .mobile-work {
+    display: flex;
+  }
+  .desktop-work {
+    display: none;
+  }
+}
+@media (min-width: 55em) {
+  .mobile-work {
+    display: none;
+  }
+  .desktop-work {
+    display: flex;
+  }
+}
+.desktop-work {
+  justify-content: center;
+}
+.mobile-work {
+  justify-content: center;
+}
+.timeline-separator {
+  border-left: 5px solid #cdedf6;
+  flex: 1;
+}
+.timeline-separator-mobile {
+  height: 2em;
+  border-left: 5px solid #cdedf6;
 }
 
 .WorkContent {
