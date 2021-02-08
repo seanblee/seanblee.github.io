@@ -73,7 +73,7 @@ class Work extends Component {
                             className="work-description"
                             my="6px"
                             color="white">
-                                CloudTest part of an internal engineering systems team which delivers a distributedrerEeeeeE testing platform for users on Microsoft's internal DevOps tool.
+                                CloudTest part of an internal engineering systems team which delivers a distributed testing platform for users on Microsoft's internal DevOps tool.
                                 My latest project involved migrating test systems for large Microsoft teams to Azure.
                             </Text>
                             <Flex
