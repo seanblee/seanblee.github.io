@@ -1,3 +1,19 @@
+@media (min-width: 14em) {
+  .mobile-footer {
+    display: flex;
+  }
+  .desktop-footer {
+    display: none;
+  }
+}
+@media (min-width: 55em) {
+  .mobile-footer {
+    display: none;
+  }
+  .desktop-footer {
+    display: flex;
+  }
+}
 .FooterLink {
     cursor: pointer;
     user-select: none;

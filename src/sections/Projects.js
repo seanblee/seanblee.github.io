@@ -87,7 +87,7 @@ class Projects extends Component {
 
     renderCardContent() {
         if (this.state.selectedCard == null){
-            return <div>Pick a panel to find out more! If not here's a quick summary of my skills in a fun infographic:</div>
+            return <div>Pick a panel to find out more! Work in progress section</div>
         }
         else {
             return (

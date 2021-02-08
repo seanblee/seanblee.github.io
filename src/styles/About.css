@@ -24,6 +24,11 @@
         padding-bottom: 10px;
     }
 }
+@media (min-width: 55em) {
+    .about-header {
+        font-size: 4em;
+    }
+}
 @media (min-width: 100em) {
     .about-header {
         font-size: 5em;

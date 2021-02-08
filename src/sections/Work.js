@@ -33,9 +33,9 @@ class Work extends Component {
                 width="fit-content"
                 mb="5vw">
                     <Text
+                    className="work-header"
                     color="#042a2b"
                     fontFamily="Segoe"
-                    fontSize="55px"
                     fontWeight="bolder">
                         Places I've Worked
                     </Text>
@@ -55,11 +55,13 @@ class Work extends Component {
                         style={{boxShadow: '1px 2px 4px rgba(0,0,0,0.2)',  borderRadius: '5px' }}
                         p="2vw">
                             <Text
+                            className="work-title"
                             fontFamily="consolas"
                             color="white">
                                 Software Engineer
                             </Text>
                             <Text
+                            className="work-description"
                             fontFamily="Segoe"
                             fontWeight="bolder"
                             fontSize="23px"
@@ -68,9 +70,10 @@ class Work extends Component {
                                 Microsoft, 1ES CloudTest
                             </Text>
                             <Text
+                            className="work-description"
                             my="6px"
                             color="white">
-                                CloudTest part of an internal engineering systems team which delivers a distributable testing platform for users on Microsoft's internal DevOps tool.
+                                CloudTest part of an internal engineering systems team which delivers a distributedrerEeeeeE testing platform for users on Microsoft's internal DevOps tool.
                                 My latest project involved migrating test systems for large Microsoft teams to Azure.
                             </Text>
                             <Flex
@@ -128,11 +131,13 @@ class Work extends Component {
                         style={{boxShadow: '1px 2px 4px rgba(0,0,0,0.2)',  borderRadius: '5px' }}
                         p="2vw">
                             <Text
+                            className="work-title"
                             fontFamily="consolas"
                             color="#042a2b">
                                 Chief Technical Officer
                             </Text>
                             <Text
+                            className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
                             fontSize="23px"
@@ -141,6 +146,7 @@ class Work extends Component {
                                 Wyndo
                             </Text>
                             <Text
+                            className="work-description"
                             my="6px"
                             color="#042a2b">
                                 Wyndo is an insurtech platform for automatically processing insurance documents and providing smart suggestions and requotes. I managed the software team and was in charge of the development and design of the platform. I left the team after we got into an accelerator in the UK with a grant of $30,000.
@@ -168,11 +174,13 @@ class Work extends Component {
                         style={{boxShadow: '1px 2px 4px rgba(0,0,0,0.2)',  borderRadius: '5px' }}
                         p="2vw">
                             <Text
+                            className="work-title"
                             fontFamily="consolas"
                             color="#153b50">
                                 Software Engineering Intern
                             </Text>
                             <Text
+                            className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
                             fontSize="23px"
@@ -181,9 +189,10 @@ class Work extends Component {
                                 Microsoft, MCIO
                             </Text>
                             <Text
+                            className="work-description"
                             my="6px"
                             color="#153b50">
-                                Did my junior internship at Microsoft where I worked on a service that allows data warehouse operators to manage hardware metadata. 
+                                I spent my junior internship at Microsoft where I worked on a service that allows data warehouse operators to manage hardware metadata. 
                             </Text>
                             <Flex
                             flexDirection="row"
@@ -240,11 +249,13 @@ class Work extends Component {
                         style={{boxShadow: '1px 2px 4px rgba(0,0,0,0.2)',  borderRadius: '5px' }}
                         p="2vw">
                             <Text
+                            className="work-title"
                             fontFamily="consolas"
                             color="#cdedf6">
                                 Engineering Outreach Instructor
                             </Text>
                             <Text
+                            className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
                             fontSize="23px"
@@ -253,15 +264,11 @@ class Work extends Component {
                                 University of Toronto                                                              
                             </Text>
                             <Text
+                            className="work-description"
                             my="6px"
                             color="#cdedf6">
-                                Wyndo is an insurtech platform for automatically processing insurance documents and providing smart suggestions and requotes. I managed the software team and was in charge of the development and design of the platform. I left the team after we got into an accelerator in the UK with a grant of $30,000.
+                                Spent this summer creating various computer science curriculum and then teaching it at a group of schools in the Toronto region, as part of UofT's engineering outreach program.
                             </Text>
-                            <Flex
-                            flexDirection="row"
-                            flexWrap="wrap">
-                            {this.renderTags(["React", "Node", "Express", "Python", "OpenCV", "GCP"])}
-                            </Flex>
                         </Flex>
                     </Flex>
                 </Flex>
@@ -281,9 +288,9 @@ class Work extends Component {
                 width="fit-content"
                 mb="5vw">
                     <Text
+                    className="work-header"
                     color="#042a2b"
                     fontFamily="Segoe"
-                    fontSize="55px"
                     fontWeight="bolder">
                         Places I've Worked
                     </Text>
@@ -301,11 +308,13 @@ class Work extends Component {
                         style={{boxShadow: '1px 2px 4px rgba(0,0,0,0.2)',  borderRadius: '5px' }}
                         p="2vw">
                             <Text
+                            className="work-title"
                             fontFamily="consolas"
                             color="white">
                                 Software Engineer
                             </Text>
                             <Text
+                            className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
                             fontSize="23px"
@@ -314,9 +323,10 @@ class Work extends Component {
                                 Microsoft, 1ES CloudTest
                             </Text>
                             <Text
+                            className="work-description"
                             my="6px"
                             color="white">
-                                CloudTest part of an internal engineering systems team which delivers a distributable testing platform for users on Microsoft's internal DevOps tool.
+                                CloudTest part of an internal engineering systems team which delivers a distributed testing platform for users on Microsoft's internal DevOps tool.
                                 My latest project involved migrating test systems for large Microsoft teams to Azure.
                             </Text>
                             <Flex
@@ -340,11 +350,13 @@ class Work extends Component {
                         style={{boxShadow: '1px 2px 4px rgba(0,0,0,0.2)',  borderRadius: '5px' }}
                         p="2vw">
                             <Text
+                            className="work-title"
                             fontFamily="consolas"
                             color="#042a2b">
                                 Chief Technical Officer
                             </Text>
                             <Text
+                            className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
                             fontSize="23px"
@@ -353,6 +365,7 @@ class Work extends Component {
                                 Wyndo
                             </Text>
                             <Text
+                            className="work-description"
                             my="6px"
                             color="#042a2b">
                                 Wyndo is an insurtech platform for automatically processing insurance documents and providing smart suggestions and requotes. I managed the software team and was in charge of the development and design of the platform. I left the team after we got into an accelerator in the UK with a grant of $30,000.
@@ -378,11 +391,13 @@ class Work extends Component {
                         style={{boxShadow: '1px 2px 4px rgba(0,0,0,0.2)',  borderRadius: '5px' }}
                         p="2vw">
                             <Text
+                            className="work-title"
                             fontFamily="consolas"
                             color="#153b50">
                                 Software Engineering Intern
                             </Text>
                             <Text
+                            className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
                             fontSize="23px"
@@ -391,9 +406,10 @@ class Work extends Component {
                                 Microsoft, MCIO
                             </Text>
                             <Text
+                            className="work-description"
                             my="6px"
                             color="#153b50">
-                                I did my junior internship at Microsoft where I worked on a service that allows data warehouse operators to manage hardware metadata. 
+                                I spent my junior internship at Microsoft where I worked on a service that allows data warehouse operators to manage hardware metadata. 
                             </Text>
                             <Flex
                             flexDirection="row"
@@ -416,11 +432,13 @@ class Work extends Component {
                         style={{boxShadow: '1px 2px 4px rgba(0,0,0,0.2)',  borderRadius: '5px' }}
                         p="2vw">
                             <Text
+                            className="work-title"
                             fontFamily="consolas"
                             color="#cdedf6">
                                 Engineering Outreach Instructor
                             </Text>
                             <Text
+                            className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
                             fontSize="23px"
@@ -429,15 +447,11 @@ class Work extends Component {
                                 University of Toronto                                                              
                             </Text>
                             <Text
+                            className="work-description"
                             my="6px"
                             color="#cdedf6">
-                                Wyndo is an insurtech platform for automatically processing insurance documents and providing smart suggestions and requotes. I managed the software team and was in charge of the development and design of the platform. I left the team after we got into an accelerator in the UK with a grant of $30,000.
+                                Spent this summer creating various computer science curriculum and then teaching it at a group of schools in the Toronto region, as part of UofT's engineering outreach program.
                             </Text>
-                            <Flex
-                            flexDirection="row"
-                            flexWrap="wrap">
-                            {this.renderTags(["React", "Node", "Express", "Python", "OpenCV", "GCP"])}
-                            </Flex>
                         </Flex>
                 </Flex>
                 )}</InView>
