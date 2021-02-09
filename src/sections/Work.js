@@ -12,7 +12,7 @@ class Work extends Component {
     renderTags(Tags) {
         return Tags.map((item) => 
         <Flex py="5px" px="7px" mx="5px" mt="1vw" backgroundColor="white" style={{boxShadow: '1px 3px rgba(0,0,0,0.1)'}}>
-            <Text fontSize="15px" fontFamily = "consolas" color="#042a2b">{item}</Text>
+            <Text className="work-description" fontFamily = "consolas" color="#042a2b">{item}</Text>
         </Flex>
         );
     }
@@ -64,7 +64,6 @@ class Work extends Component {
                             className="work-description"
                             fontFamily="Segoe"
                             fontWeight="bolder"
-                            fontSize="23px"
                             color="white"
                             my="1px">
                                 Microsoft, 1ES CloudTest
@@ -96,7 +95,7 @@ class Work extends Component {
                     <Flex
                     width={9/21}
                     alignItems="center">
-                        <Text fontSize="18px" fontFamily="Segoe" color="#153b50">2019 - Present</Text>
+                        <Text className="work-location" fontFamily="Segoe" color="#153b50">2019 - Present</Text>
                     </Flex>
                 </Flex>
                 )}</InView>
@@ -108,7 +107,7 @@ class Work extends Component {
                     width={9/21}
                     alignItems="center"
                     justifyContent="flex-end">
-                        <Text fontSize="18px" fontFamily="Segoe" color="#153b50">2019</Text>
+                        <Text className="work-location" fontFamily="Segoe" color="#153b50">2019</Text>
                     </Flex>
                     <Flex
                     width={3/21}
@@ -140,7 +139,6 @@ class Work extends Component {
                             className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
-                            fontSize="23px"
                             color="#042a2b"
                             my="1px">
                                 Wyndo
@@ -183,7 +181,6 @@ class Work extends Component {
                             className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
-                            fontSize="23px"
                             color="#153b50"
                             my="1px">
                                 Microsoft, MCIO
@@ -214,7 +211,7 @@ class Work extends Component {
                     <Flex
                     width={9/21}
                     alignItems="center">
-                        <Text fontSize="18px" fontFamily="Segoe" color="#153b50">2018</Text>
+                        <Text className="work-location" fontFamily="Segoe" color="#153b50">2018</Text>
                     </Flex>
                 </Flex>
                 )}</InView>
@@ -226,7 +223,7 @@ class Work extends Component {
                     width={9/21}
                     alignItems="center"
                     justifyContent="flex-end">
-                        <Text fontSize="18px" fontFamily="Segoe" color="#153b50">2017</Text>
+                        <Text className="work-location" fontFamily="Segoe" color="#153b50">2017</Text>
                     </Flex>
                     <Flex
                     width={3/21}
@@ -258,7 +255,6 @@ class Work extends Component {
                             className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
-                            fontSize="23px"
                             color="#cdedf6"
                             my="1px">
                                 University of Toronto                                                              
@@ -317,7 +313,6 @@ class Work extends Component {
                             className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
-                            fontSize="23px"
                             color="white"
                             my="1px">
                                 Microsoft, 1ES CloudTest
@@ -359,7 +354,6 @@ class Work extends Component {
                             className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
-                            fontSize="23px"
                             color="#042a2b"
                             my="1px">
                                 Wyndo
@@ -400,7 +394,6 @@ class Work extends Component {
                             className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
-                            fontSize="23px"
                             color="#153b50"
                             my="1px">
                                 Microsoft, MCIO
@@ -441,7 +434,6 @@ class Work extends Component {
                             className="work-location"
                             fontFamily="Segoe"
                             fontWeight="bolder"
-                            fontSize="23px"
                             color="#cdedf6"
                             my="1px">
                                 University of Toronto                                                              
